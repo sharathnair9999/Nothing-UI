@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="../styles/docs.css">
   <link rel="stylesheet" href="../styles/index.css">
   <script src="https://kit.fontawesome.com/ec96da95d9.js" crossorigin="anonymous"></script>
+
   <title>Getting Started</title>
 </head>
 
@@ -52,43 +53,85 @@
     <main class="main-section">
       <h2 id="documentation" class="each-section">Documentation</h2>
       <h3>How to use?</h3>
-      <p>Before adding any components head over to your <strong>HTML</strong> page and add this link inside the head
+      <p class="section-text">Before adding any components head over to your <strong>HTML</strong> page and add this
+        link inside the head
         section that helps import the css for the components that you want to use.</p>
 
-        <iframe
+      <iframe
         src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fnothing-ui-library.netlify.app%252Fstyles%252Findex.css%2522%252F%253E"
         sandbox="allow-scripts allow-same-origin">
       </iframe>
       <iframe
-      src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2540import%2520url%28%2522https%253A%252F%252Fnothing-ui-library.netlify.app%252Fstyles%252Findex.css%2522%29%250A"
-      sandbox="allow-scripts allow-same-origin">
-    </iframe>
-      <p>
+        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2540import%2520url%28%2522https%253A%252F%252Fnothing-ui-library.netlify.app%252Fstyles%252Findex.css%2522%29%250A"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe>
+      <p class="section-text">
         NothingUI also enables you to import the styles for components just like the below example. All components can
         be imported similarly by changing the name of the component in the link
       </p>
       <iframe
-  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2540import%2520url%28%2522https%253A%252F%252Fnothing-ui-library.netlify.app%252Fstyles%252Fcomponents%252Falert.css%2522%29%250A"
-  sandbox="allow-scripts allow-same-origin">
-</iframe>
+      src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2540import%2520url%28%2522https%253A%252F%252Fnothing-ui-library.netlify.app%252Fstyles%252Fcomponents%252Falert%252Falert.css%2522%29"
+      sandbox="allow-scripts allow-same-origin">
+    </iframe>
       <h2 id="components" class="each-section">Components</h2>
       <h3 id="alert">Alert</h3>
-      <p>This component is used to inform the user about any form of alerts which are distinguished by th e class name
-        for each context such as primary, success, error and warning.</p>
-        <h3 id="avatar">Avatar</h3>
-        <p>This style is used to set your avatar in different sizes with or without badges on them.</p>
-        <h3 id="badge">Badge</h3>
-        <p>Putting badges on icons, buttons and texts is much easier with a couple of classes.</p>
-        <h3 id="button">Buttons</h3>
-        <p>Different primary and secondary buttons just a class name away.</p>
-        <h3 id="snackbar">Snackbar</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quae qui corporis nam error! Ullam, optio ipsam sit totam magnam, nisi cumque molestias eos quasi possimus ducimus sed natus quo!</p>
-        <h3 id="card">Card</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nostrum laboriosam ab fuga maxime quos enim quo nemo facere aperiam totam, laborum voluptate architecto perspiciatis temporibus nobis pariatur nisi illo!</p>
-        <h3 id="image">Image</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam eveniet vero facere? In voluptates fuga, asperiores nobis necessitatibus excepturi quaerat eum expedita nisi accusantium, repudiandae labore omnis velit inventore atque.</p>
-        <h3 id="input">Input</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eos expedita impedit delectus unde sapiente doloremque voluptates rem rerum voluptatem eaque deserunt aperiam tenetur minima laborum saepe atque, ut nihil.</p>
+      <p class="section-text">This component is used to inform the user about any form of alerts which are distinguished
+        by th e class name
+        for each context such as primary, success, error and warning. To use these alerts, use the contextual classes
+        (e.g., <code>.alert-success</code>).</p>
+      <div class="alert alert-primary">
+        <p class="alert-message">This is a primary alert. You get a close icon as well</p><img
+          src="../styles/components/alert/close.svg" alt="close-icon" class="alert-close">
+      </div>
+      <br>
+      <div class="alert alert-success">
+        <p class="alert-message">This is a success alert. You get a close icon as well</p><img
+          src="../styles/components/alert/close.svg" alt="close-icon" class="alert-close">
+      </div>
+      <br>
+      <div class="alert alert-danger">
+        <p class="alert-message">This is a danger alert. You get a close icon as well</p><img
+          src="../styles/components/alert/close.svg" alt="close-icon" class="alert-close">
+      </div>
+      <br>
+      <div class="alert alert-warning">
+        <p class="alert-message">This is a warning alert. You get a close icon as well</p><img
+          src="../styles/components/alert/close.svg" alt="close-icon" class="alert-close">
+      </div>
+      <br>
+      <div class="alert alert-simple">
+        <p class="alert-message">This is a simple alert. You get a close icon as well</p><img
+          src="../styles/components/alert/close.svg" alt="close-icon" class="alert-close">
+      </div>
+
+      <br>
+
+      <iframe
+        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=4px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522alert-message%2522%253EThis%2520is%2520a%2520primary%2520alert.%2520You%2520get%2520a%2520close%2520icon%2520as%2520well%253C%252Fp%253E%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522..%252Fstyles%252Fcomponents%252Falert%252Fclose.svg%2522%2520alt%253D%2522close-icon%2522%2520class%253D%2522alert-close%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cbr%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522alert-message%2522%253EThis%2520is%2520a%2520success%2520alert.%2520You%2520get%2520a%2520close%2520icon%2520as%2520well%253C%252Fp%253E%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522..%252Fstyles%252Fcomponents%252Falert%252Fclose.svg%2522%2520alt%253D%2522close-icon%2522%2520class%253D%2522alert-close%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cbr%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522alert-message%2522%253EThis%2520is%2520a%2520danger%2520alert.%2520You%2520get%2520a%2520close%2520icon%2520as%2520well%253C%252Fp%253E%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522..%252Fstyles%252Fcomponents%252Falert%252Fclose.svg%2522%2520alt%253D%2522close-icon%2522%2520class%253D%2522alert-close%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cbr%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522alert-message%2522%253EThis%2520is%2520a%2520warning%2520alert.%2520You%2520get%2520a%2520close%2520icon%2520as%2520well%253C%252Fp%253E%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522..%252Fstyles%252Fcomponents%252Falert%252Fclose.svg%2522%2520alt%253D%2522close-icon%2522%2520class%253D%2522alert-close%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cbr%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-simple%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522alert-message%2522%253EThis%2520is%2520a%2520simple%2520alert.%2520You%2520get%2520a%2520close%2520icon%2520as%2520well%253C%252Fp%253E%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522..%252Fstyles%252Fcomponents%252Falert%252Fclose.svg%2522%2520alt%253D%2522close-icon%2522%2520class%253D%2522alert-close%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+        sandbox="allow-scripts allow-same-origin">
+      </iframe>
+
+      <h3 id="avatar">Avatar</h3>
+      <p>This style is used to set your avatar in different sizes with or without badges on them.</p>
+      <h3 id="badge">Badge</h3>
+      <p>Putting badges on icons, buttons and texts is much easier with a couple of classes.</p>
+      <h3 id="button">Buttons</h3>
+      <p>Different primary and secondary buttons just a class name away.</p>
+      <h3 id="snackbar">Snackbar</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quae qui corporis nam error! Ullam, optio
+        ipsam sit totam magnam, nisi cumque molestias eos quasi possimus ducimus sed natus quo!</p>
+      <h3 id="card">Card</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nostrum laboriosam ab fuga maxime quos
+        enim quo nemo facere aperiam totam, laborum voluptate architecto perspiciatis temporibus nobis pariatur nisi
+        illo!</p>
+      <h3 id="image">Image</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam eveniet vero facere? In voluptates fuga,
+        asperiores nobis necessitatibus excepturi quaerat eum expedita nisi accusantium, repudiandae labore omnis velit
+        inventore atque.</p>
+      <h3 id="input">Input</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eos expedita impedit delectus unde sapiente
+        doloremque voluptates rem rerum voluptatem eaque deserunt aperiam tenetur minima laborum saepe atque, ut nihil.
+      </p>
 
     </main>
 
