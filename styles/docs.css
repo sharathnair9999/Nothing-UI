@@ -134,11 +134,7 @@ main .section-text{
 }
 
 
- iframe{
-  width: 100%;
-  height: 100%;
-  border: 0;
-  transform: scale(1);
-  overflow: auto;
-  border-radius: 10px;
+.code-container{
+  max-width: 80vw;
 }
+

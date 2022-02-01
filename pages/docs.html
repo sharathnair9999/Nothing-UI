@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="../styles/docs.css">
   <link rel="stylesheet" href="../styles/index.css">
   <script src="https://kit.fontawesome.com/ec96da95d9.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css" integrity="sha512-Jk4AqjWsdSzSWCSuQTfYRIF84Rq/eV0G2+tu07byYwHcbTGfdmLrHjUSwvzp5HvbiqK4ibmNwdcG49Y5RGYPTg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
 
   <title>Getting Started</title>
 </head>
@@ -57,22 +59,34 @@
         link inside the head
         section that helps import the css for the components that you want to use.</p>
 
-      <iframe
-        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fnothing-ui-library.netlify.app%252Fstyles%252Findex.css%2522%252F%253E"
-        sandbox="allow-scripts allow-same-origin">
-      </iframe>
-      <iframe
-        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2540import%2520url%28%2522https%253A%252F%252Fnothing-ui-library.netlify.app%252Fstyles%252Findex.css%2522%29%250A"
-        sandbox="allow-scripts allow-same-origin">
-      </iframe>
+   
+      <section class="code-container">
+        <pre class="pre-code">
+          <code class="language-html">
+&lt;link rel="stylesheet" href="https://nothing-ui-library.netlify.app/styles/index.css"/>
+          </code>
+        </pre>
+      </section>
+   
+      <section class="code-container">
+        <pre class="pre-code">
+          <code class="language-css">
+@import url("https://nothing-ui-library.netlify.app/styles/index.css")
+          </code>
+        </pre>
+      </section>
       <p class="section-text">
         NothingUI also enables you to import the styles for components just like the below example. All components can
         be imported similarly by changing the name of the component in the link
       </p>
-      <iframe
-      src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2540import%2520url%28%2522https%253A%252F%252Fnothing-ui-library.netlify.app%252Fstyles%252Fcomponents%252Falert%252Falert.css%2522%29"
-      sandbox="allow-scripts allow-same-origin">
-    </iframe>
+    
+      <section class="code-container">
+        <pre class="pre-code">
+          <code class="language-css">
+@import url("https://nothing-ui-library.netlify.app/styles/components/alert/alert.css")
+          </code>
+        </pre>
+      </section>
       <h2 id="components" class="each-section">Components</h2>
       <h3 id="alert">Alert</h3>
       <p class="section-text">This component is used to inform the user about any form of alerts which are distinguished
@@ -105,12 +119,37 @@
       </div>
 
       <br>
-
-      <iframe
-        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=11px&ph=4px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2509%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-primary%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522alert-message%2522%253EThis%2520is%2520a%2520primary%2520alert.%2520You%2520get%2520a%2520close%2520icon%2520as%2520well%253C%252Fp%253E%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522..%252Fstyles%252Fcomponents%252Falert%252Fclose.svg%2522%2520alt%253D%2522close-icon%2522%2520class%253D%2522alert-close%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cbr%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522alert-message%2522%253EThis%2520is%2520a%2520success%2520alert.%2520You%2520get%2520a%2520close%2520icon%2520as%2520well%253C%252Fp%253E%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522..%252Fstyles%252Fcomponents%252Falert%252Fclose.svg%2522%2520alt%253D%2522close-icon%2522%2520class%253D%2522alert-close%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cbr%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-danger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522alert-message%2522%253EThis%2520is%2520a%2520danger%2520alert.%2520You%2520get%2520a%2520close%2520icon%2520as%2520well%253C%252Fp%253E%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522..%252Fstyles%252Fcomponents%252Falert%252Fclose.svg%2522%2520alt%253D%2522close-icon%2522%2520class%253D%2522alert-close%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cbr%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522alert-message%2522%253EThis%2520is%2520a%2520warning%2520alert.%2520You%2520get%2520a%2520close%2520icon%2520as%2520well%253C%252Fp%253E%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522..%252Fstyles%252Fcomponents%252Falert%252Fclose.svg%2522%2520alt%253D%2522close-icon%2522%2520class%253D%2522alert-close%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cbr%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-simple%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522alert-message%2522%253EThis%2520is%2520a%2520simple%2520alert.%2520You%2520get%2520a%2520close%2520icon%2520as%2520well%253C%252Fp%253E%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522..%252Fstyles%252Fcomponents%252Falert%252Fclose.svg%2522%2520alt%253D%2522close-icon%2522%2520class%253D%2522alert-close%2522%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
-        sandbox="allow-scripts allow-same-origin">
-      </iframe>
-
+     
+      <section class="code-container">
+        <pre class="pre-code">
+          <code class="language-html">
+  &lt;div class="alert alert-primary">
+    &lt;p class="alert-message">This is a primary alert. You get a close icon as well&lt;/p>&lt;img
+      src="../styles/components/alert/close.svg" alt="close-icon" class="alert-close">
+  &lt;/div>
+  &lt;br>
+  &lt;div class="alert alert-success">
+    &lt;p class="alert-message">This is a success alert. You get a close icon as well&lt;/p>&lt;img
+      src="../styles/components/alert/close.svg" alt="close-icon" class="alert-close">
+  &lt;/div>
+  &lt;br>
+  &lt;div class="alert alert-danger">
+    &lt;p class="alert-message">This is a danger alert. You get a close icon as well&lt;/p>&lt;img
+      src="../styles/components/alert/close.svg" alt="close-icon" class="alert-close">
+  &lt;/div>
+  &lt;br>
+  &lt;div class="alert alert-warning">
+    &lt;p class="alert-message">This is a warning alert. You get a close icon as well&lt;/p>&lt;img
+      src="../styles/components/alert/close.svg" alt="close-icon" class="alert-close">
+  &lt;/div>
+  &lt;br>
+  &lt;div class="alert alert-simple">
+    &lt;p class="alert-message">This is a simple alert. You get a close icon as well&lt;/p>&lt;img
+      src="../styles/components/alert/close.svg" alt="close-icon" class="alert-close">
+  &lt;/div>
+          </code>
+        </pre>
+      </section>
       <h3 id="avatar">Avatar</h3>
       <p>This style is used to set your avatar in different sizes with or without badges on them.</p>
       <h3 id="badge">Badge</h3>
@@ -136,6 +175,10 @@
     </main>
 
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+  <script>
+    hljs.highlightAll();
+  </script>
 </body>
 <script src="../scripts/script.js"></script>
 
