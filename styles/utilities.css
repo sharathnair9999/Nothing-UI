@@ -1,0 +1,118 @@
+/* html {
+  font-size: 100%;
+} */
+
+/* Extra small devices (phones, 600px and down) */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /* html {
+    font-size: 70%;
+  } */
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 768px) {
+  /* html {
+    font-size: 75%;
+  } */
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 992px) {
+  /* html {
+    font-size: 80%;
+  } */
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 1200px) {
+  /* html {
+    font-size: 100%;
+  } */
+}
+.mx-auto {
+  margin: 0 auto;
+}
+
+.mx-1 {
+  margin: 0 1rem;
+}
+.mx-2 {
+  margin: 0 2rem;
+}
+.ml-2 {
+  margin-left: 2rem;
+}
+
+.ml-10 {
+  margin-left: 10rem;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.mr-2 {
+  margin-right: 2rem;
+}
+
+.ml-8 {
+  margin-left: 8rem;
+}
+
+.my-10 {
+  margin: 10rem 0;
+}
+
+.mr-10 {
+  margin-right: 10rem;
+}
+.flex {
+  display: flex;
+}
+
+.flex-and-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.button {
+  padding: 0.8rem 1.2rem;
+  margin: 2rem;
+  background: none;
+  border-radius: 0.5rem;
+  font-weight:500;
+  /* letter-spacing: 0.1rem; */
+  font-size: 1.1rem;
+}
+
+button:hover, .link:hover{
+  cursor: pointer;
+  /* text-decoration: underline; */
+}

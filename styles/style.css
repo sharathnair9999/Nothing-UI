@@ -1,0 +1,143 @@
+
+
+/* Header Styling */
+
+header{
+  display: flex;
+  box-shadow: 1px 4px 5px 1px var(--box-shadow-color);
+  padding: 1rem 6rem;
+  height: 5rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    /* z-index: 10; */
+    background-color: var(--bg-secondary);
+  align-items: center;
+}
+
+.main-logo{
+  font-size: 3rem;
+  display: inline-block;
+  position: relative;
+  outline: none;
+  border: none;
+}
+
+
+.main-logo:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.main-logo:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+/* Header Styling */
+
+/* Hero Content */
+
+.hero{
+  height: 96vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.hero-header{
+  max-width: 60rem;
+  font-size: 4rem;
+}
+
+.hero-text{
+  max-width: 60rem;
+  font-size: 1.5rem;
+  opacity: 0.7;
+}
+.hero-links{
+  /* margin: 5rem 0; */
+  padding-top: 2rem;
+}
+
+.link{
+  padding: 0.8rem 1.5rem;
+  margin: 0 1rem;
+}
+
+.link-primary{
+  background-color: var(--bg-primary);
+  color: var(--bg-secondary);
+  border: 1px solid var(--bg-primary);
+}
+
+
+.link-secondary{
+  background-color: var(--bg-secondary);
+  color: var(--bg-primary);
+  border: 1px solid var(--bg-primary);
+}
+
+.link-primary:hover{
+  filter: brightness(95%);
+}
+.link-secondary:hover{
+  filter: brightness(95%);
+}
+
+footer{
+  display: none;
+}
+
+
+@media screen and (max-width:768px) {
+  .icon-container{
+    display: none !important;
+  }
+  header{
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .main-logo{
+    font-size: 2.5rem;
+    display: block;
+  }
+  .hero-header{
+    font-size: 2.5rem;
+  }
+  .hero-text{
+    font-size: 1rem;
+  }
+  .hero-links{
+    padding: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    font-size: 0.8rem;
+  }
+  .link{
+    padding: 0.5rem 0.4rem;
+    margin: 0 0.2rem;
+    
+  }
+  .hero{
+    height: 90vh;
+  }
+
+  footer{
+    display: block;
+  }
+}
+/* Hero Content */
