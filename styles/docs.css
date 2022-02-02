@@ -1,6 +1,6 @@
 /* Body of getting started page */
 
-.container {
+.page-container {
   margin-top: 5rem;
   display: flex;
   /* gap: 1rem; */
