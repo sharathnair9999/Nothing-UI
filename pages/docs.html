@@ -16,8 +16,10 @@
   <script src="https://kit.fontawesome.com/ec96da95d9.js" crossorigin="anonymous"></script>
 
   <!-- CDN to access the code highlighting feature of highlightjs with atom one dark theme -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css" integrity="sha512-Jk4AqjWsdSzSWCSuQTfYRIF84Rq/eV0G2+tu07byYwHcbTGfdmLrHjUSwvzp5HvbiqK4ibmNwdcG49Y5RGYPTg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-     
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css"
+    integrity="sha512-Jk4AqjWsdSzSWCSuQTfYRIF84Rq/eV0G2+tu07byYwHcbTGfdmLrHjUSwvzp5HvbiqK4ibmNwdcG49Y5RGYPTg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
   <title>Getting Started</title>
 </head>
@@ -69,7 +71,7 @@
         link inside the head
         section that helps import the css for the components that you want to use.</p>
 
-   
+
       <section class="code-container">
         <pre class="pre-code">
           <code class="language-html">
@@ -77,7 +79,7 @@
           </code>
         </pre>
       </section>
-   
+
       <section class="code-container">
         <pre class="pre-code">
           <code class="language-css">
@@ -85,11 +87,21 @@
           </code>
         </pre>
       </section>
+      
+      <p class="section-text">To use icons in the project, you can go over to kit generation site of <a href="https://fontawesome.com/start" target="_blank">Font Awesome</a> to generate your own icons kit for free and link the CDN code to the <code>head</code> of your HTML. Just like below..</p>
+      
+      <section class="code-container">
+        <pre class="pre-code">
+          <code class="language-html">
+            &lt;script src="https://kit.fontawesome.com/[your unique kit id]" crossorigin="anonymous">&lt;/script>
+          </code>
+        </pre>
+      </section>
+      
       <p class="section-text">
         NothingUI also enables you to import the styles for components just like the below example. All components can
         be imported similarly by changing the name of the component in the link
       </p>
-    
       <section class="code-container">
         <pre class="pre-code">
           <code class="language-css">
@@ -108,69 +120,64 @@
         for each context such as primary, success, error and warning. To use these alerts, use the contextual classes
         (e.g., <code>.alert-success</code>).</p>
 
-        <!-- PRIMARY ALERT -->
+      <!-- PRIMARY ALERT -->
       <div class="alert alert-primary">
-        <p class="alert-message">This is a primary alert. You get a close icon as well</p><img
-          src="../styles/components/alert/close.svg" alt="close-icon" class="alert-close">
+        <p class="alert-message">This is a primary alert. You get a close icon as well</p><i class="far fa-times-circle alert-close fa-lg"></i>
       </div>
       <br>
 
       <!-- SUCCESS ALERT -->
       <div class="alert alert-success">
-        <p class="alert-message">This is a success alert. You get a close icon as well</p><img
-          src="../styles/components/alert/close.svg" alt="close-icon" class="alert-close">
+        <p class="alert-message">This is a success alert. You get a close icon as well</p><i class="far fa-times-circle alert-close fa-lg"></i>
       </div>
       <br>
 
       <!-- DANGER ALERT -->
       <div class="alert alert-danger">
-        <p class="alert-message">This is a danger alert. You get a close icon as well</p><img
-          src="../styles/components/alert/close.svg" alt="close-icon" class="alert-close">
+        <p class="alert-message">This is a danger alert. You get a close icon as well</p><i class="far fa-times-circle alert-close fa-lg"></i>
       </div>
       <br>
 
       <!-- WARNING ALERT -->
       <div class="alert alert-warning">
-        <p class="alert-message">This is a warning alert. You get a close icon as well</p><img
-          src="../styles/components/alert/close.svg" alt="close-icon" class="alert-close">
+        <p class="alert-message">This is a warning alert. You get a close icon as well</p><i class="far fa-times-circle alert-close fa-lg"></i>
       </div>
       <br>
 
       <!-- SIMPLE ALERT -->
       <div class="alert alert-simple">
-        <p class="alert-message">This is a simple alert. You get a close icon as well</p><img
-          src="../styles/components/alert/close.svg" alt="close-icon" class="alert-close">
+        <p class="alert-message">This is a simple alert. You get a close icon as well</p><i class="far fa-times-circle alert-close fa-lg"></i>
       </div>
 
       <br>
-     
+
       <!-- CODE SNIPPETS TO ADD RESPECTIVE ALERTS IN A PROJECT -->
       <section class="code-container">
         <pre class="pre-code">
           <code class="language-html">
   &lt;div class="alert alert-primary">
-    &lt;p class="alert-message">This is a primary alert. You get a close icon as well&lt;/p>&lt;img
-      src="../styles/components/alert/close.svg" alt="close-icon" class="alert-close">
+    &lt;p class="alert-message">This is a primary alert. You get a close icon as well&lt;/p>
+    &lt;i class="far fa-times-circle alert-close fa-lg">&lt;/i>
   &lt;/div>
   &lt;br>
   &lt;div class="alert alert-success">
-    &lt;p class="alert-message">This is a success alert. You get a close icon as well&lt;/p>&lt;img
-      src="../styles/components/alert/close.svg" alt="close-icon" class="alert-close">
+    &lt;p class="alert-message">This is a success alert. You get a close icon as well&lt;/p>
+    &lt;i class="far fa-times-circle alert-close fa-lg">&lt;/i>
   &lt;/div>
   &lt;br>
   &lt;div class="alert alert-danger">
-    &lt;p class="alert-message">This is a danger alert. You get a close icon as well&lt;/p>&lt;img
-      src="../styles/components/alert/close.svg" alt="close-icon" class="alert-close">
+    &lt;p class="alert-message">This is a danger alert. You get a close icon as well&lt;/p>
+    &lt;i class="far fa-times-circle alert-close fa-lg">&lt;/i>
   &lt;/div>
   &lt;br>
   &lt;div class="alert alert-warning">
-    &lt;p class="alert-message">This is a warning alert. You get a close icon as well&lt;/p>&lt;img
-      src="../styles/components/alert/close.svg" alt="close-icon" class="alert-close">
+    &lt;p class="alert-message">This is a warning alert. You get a close icon as well&lt;/p>
+    &lt;i class="far fa-times-circle alert-close fa-lg">&lt;/i>
   &lt;/div>
   &lt;br>
   &lt;div class="alert alert-simple">
-    &lt;p class="alert-message">This is a simple alert. You get a close icon as well&lt;/p>&lt;img
-      src="../styles/components/alert/close.svg" alt="close-icon" class="alert-close">
+    &lt;p class="alert-message">This is a simple alert. You get a close icon as well&lt;/p>
+    &lt;i class="far fa-times-circle alert-close fa-lg">&lt;/i>
   &lt;/div>
           </code>
         </pre>
@@ -178,6 +185,8 @@
 
       <!-- AVATAR COMPONENT -->
       <h3 id="avatar">Avatar</h3>
+
+      <!-- SAME SIZED AVATARS -->
       <p>This style is used to set your avatar in different sizes.</p>
       <div class="avatar-container">
         <img src="../styles/components/avatar/avatar-img.jpg" alt="avatar-image" class="avatar avatar-sm">
@@ -186,7 +195,7 @@
         <img src="../styles/components/avatar/avatar-4.jpg" alt="avatar-image" class="avatar avatar-sm">
       </div>
       <h4>Same sized Avatars</h4>
-      <hr>
+
       <section class="code-container">
         <pre class="pre-code">
           <code class="language-html">
@@ -194,16 +203,19 @@
           </code>
         </pre>
       </section>
-      <p>You can add this type of Avatar to your project by copying above code and specifying the source for the image of Avatar</p>
+      <p>You can add this type of Avatar to your project by copying above code and specifying the source for the image
+        of Avatar</p>
       <div class="avatar-container">
-        <img src="../styles/components/avatar/avatar-img.jpg" alt="avatar-image" class="avatar avatar-sm">
-        <img src="../styles/components/avatar/avatar-img.jpg" alt="avatar-image" class="avatar avatar-lg">
-        <img src="../styles/components/avatar/avatar-img.jpg" alt="avatar-image" class="avatar avatar-xl">
-        <img src="../styles/components/avatar/avatar-img.jpg" alt="avatar-image" class="avatar avatar-2xl">
-        <img src="../styles/components/avatar/avatar-img.jpg" alt="avatar-image" class="avatar avatar-3xl">
+        <img src="../styles/components/avatar/avatar-2.jpg" alt="avatar-image" class="avatar avatar-sm">
+        <img src="../styles/components/avatar/avatar-2.jpg" alt="avatar-image" class="avatar avatar-lg">
+        <img src="../styles/components/avatar/avatar-2.jpg" alt="avatar-image" class="avatar avatar-xl">
+        <img src="../styles/components/avatar/avatar-2.jpg" alt="avatar-image" class="avatar avatar-2xl">
+        <img src="../styles/components/avatar/avatar-2.jpg" alt="avatar-image" class="avatar avatar-3xl">
       </div>
+
+      <!-- DIFFERENT SIZED AVATARS -->
       <h4>Different sized Avatars</h4>
-      <hr>
+
       <section class="code-container">
         <pre class="pre-code">
           <code class="language-html">
@@ -215,10 +227,91 @@
           </code>
         </pre>
       </section>
-      <p>To add one of the sized avatars into your project, you can add the path of desired picture in <code>src</code> mention the size class inside the <code>img</code> (e.g., <code>avatar-sm</code> for small avatar, <code>avatar-lg</code> for large avatars)</p>
-     
+
+      <p>To add one of the sized avatars into your project, you can mention the size class inside the <code>img</code>
+        (e.g., <code>avatar-sm</code> for small avatar, <code>avatar-lg</code> for large avatars)</p>
+
+
+        <!-- BADGES -->
+
       <h3 id="badge">Badge</h3>
-      <p>Putting badges on icons, buttons and texts is much easier with a couple of classes.</p>
+      <p>Putting badges on icons, avatars, buttons and texts is much easier with a couple of classes.</p>
+
+      <!-- BADGE ON AVATAR -->
+      <div class="badges-container">
+        <div class="badge-container mx-1"><img src="../styles/components/avatar/avatar-2.jpg" alt="avatar-image"
+            class="avatar avatar-sm "><span class="badge active-badge"></span></div>
+        <div class="badge-container mx-1"><img src="../styles/components/avatar/avatar-2.jpg" alt="avatar-image"
+            class="avatar avatar-sm "><span class="badge away-badge"></span></div>
+        <div class="badge-container mx-1"><img src="../styles/components/avatar/avatar-2.jpg" alt="avatar-image"
+            class="avatar avatar-sm "><span class="badge dnd-badge"></span></div>
+        <div class="badge-container mx-1"><img src="../styles/components/avatar/avatar-2.jpg" alt="avatar-image"
+            class="avatar avatar-sm "><span class="badge offline-badge"></span></div>
+          </div>
+        <br>
+        <h4>Badge on Avatar</h4>
+        <section class="code-container">
+          <pre class="pre-code">
+            <code class="language-html">
+&lt;div class="badge-container mx-1">
+  &lt;img src="...." alt="avatar-image" class="avatar avatar-sm ">
+  &lt;span class="badge active-badge">&lt;/span>
+&lt;/div>
+&lt;div class="badge-container mx-1">
+  &lt;img src="...." alt="avatar-image" class="avatar avatar-sm ">
+  &lt;span class="badge away-badge">&lt;/span>
+&lt;/div>
+&lt;div class="badge-container mx-1">
+  &lt;img src="...." alt="avatar-image" class="avatar avatar-sm ">
+  &lt;span class="badge dnd-badge">&lt;/span>
+&lt;/div>
+&lt;div class="badge-container mx-1">
+  &lt;img src="...." alt="avatar-image" class="avatar avatar-sm ">
+  &lt;span class="badge offline-badge">&lt;/span>
+&lt;/div>
+            </code>
+          </pre>
+        </section>
+        <p>You can use badges on avatar according to the status you want to set on it. For example if you want active badge add <code>active-badge</code> into the <code>span</code> tag.</p>
+        <!-- BADGE ON ICONS -->
+        <div class="badges-container">
+          <div class="badge-container mx-1">
+            <i class="fas fa-home fa-2x"></i><span class=" icon-badge red-badge flex-and-center">99+</span>
+          </div>
+          <div class="badge-container mx-1">
+            <i class="fas fa-user-tie fa-2x"></i><span class=" icon-badge blue-badge flex-and-center">5</span>
+          </div>
+          <div class="badge-container mx-1">
+            <i class="fas fa-bell fa-2x"></i><span class=" icon-badge green-badge flex-and-center">10</span>
+          </div>
+          <div class="badge-container mx-1">
+            <i class="fas fa-envelope fa-2x"></i><span class=" icon-badge yellow-badge flex-and-center">3</span>
+          </div>
+        </div>
+        <br>
+        <h4>Badge on Icons</h4>
+        <section class="code-container">
+          <pre class="pre-code">
+            <code class="language-html">
+&lt;div class="badge-container mx-1">
+  &lt;i class="fas fa-home fa-2x">&lt;/i>&lt;span class=" icon-badge red-badge flex-and-center">99+&lt;/span>
+&lt;/div>
+&lt;div class="badge-container mx-1">
+  &lt;i class="fas fa-user-tie fa-2x">&lt;/i>&lt;span class=" icon-badge blue-badge flex-and-center">5&lt;/span>
+&lt;/div>
+&lt;div class="badge-container mx-1">
+  &lt;i class="fas fa-bell fa-2x">&lt;/i>&lt;span class=" icon-badge green-badge flex-and-center">10&lt;/span>
+&lt;/div>
+&lt;div class="badge-container mx-1">
+  &lt;i class="fas fa-envelope fa-2x">&lt;/i>&lt;span class=" icon-badge yellow-badge flex-and-center">3&lt;/span>
+&lt;/div>
+            </code>
+          </pre>
+        </section>
+
+        <p class="section-text">You can use badges on icons as shown above. All you need to do is select an icon from <a href="https://fontawesome.com/" target="_blank">Font Awesome</a> and replace in the given code snippet after generating your kit as guided in the <a href="#documentation">documentation</a> and choose colors among the given color class selectors.</p>
+        
+
       <h3 id="button">Buttons</h3>
       <p>Different primary and secondary buttons just a class name away.</p>
       <h3 id="snackbar">Snackbar</h3>

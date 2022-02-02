@@ -1,0 +1,90 @@
+@import url('../..//utilities.css');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root{
+  --active-badge: #4ade80;
+  --green-badge: #4ade80;
+  --away-badge: #facc15;
+  --yellow-badge: #facc15;
+  --dnd-badge: #dc2626;
+  --red-badge: #dc2626;
+  --blue-badge : #3b82f6;
+  --offline-badge: #9ca3af;
+
+
+}
+
+.badges-container{
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.badge-container .avatar{
+  margin: 0;
+}
+
+.badge-container{
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.badge{
+  border-radius: 50%;
+  bottom: 0.3rem;
+  height: 0.8rem;
+  position: absolute;
+  right: 0;
+  width: 0.8rem;
+  border: 1px solid #727272;
+}
+
+.active-badge{
+  background-color: var(--active-badge);
+}
+
+.away-badge{
+  background-color: var(--away-badge);
+}
+.dnd-badge{
+  background-color: var(--dnd-badge);
+}
+.offline-badge{
+  background-color: var(--offline-badge);
+}
+
+.red-badge{
+  background-color: var(--red-badge);
+  color: var(--all-white);
+}
+.blue-badge{
+  background-color: var(--blue-badge);
+  color: var(--all-white);
+}
+.yellow-badge{
+  background-color: var(--yellow-badge);
+  color: var(--all-white);
+}
+.green-badge{
+  background-color: var(--green-badge);
+  color: var(--all-white);
+}
+
+.icon-badge{
+  font-size: 0.6rem;
+  border-radius: 50%;
+  top: -0.6rem;
+  height: 1.3rem;
+  position: absolute;
+  right: -0.8rem;
+  font-weight: bolder;
+  width: 1.3rem;
+  border: 1px solid #727272;
+}

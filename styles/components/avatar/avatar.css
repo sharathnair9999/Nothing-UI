@@ -12,8 +12,9 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  width: 100%;
   flex-wrap: wrap;
-  width : 100%;
+
 }
 
 .avatar{
