@@ -10,7 +10,7 @@
 .avatar-container{
   margin: 1rem;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-end;
   width: 100%;
   flex-wrap: wrap;
