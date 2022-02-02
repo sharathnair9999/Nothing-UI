@@ -7,10 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles/root.css" />
   <link rel="stylesheet" href="../styles/style.css" />
-  <!-- <link rel="stylesheet" href="../styles/utilities.css" /> -->
   <link rel="stylesheet" href="../styles/docs.css">
+
+  <!-- Stylesheet for all the components -->
   <link rel="stylesheet" href="../styles/index.css">
+
+  <!-- Link to access fontawesome icons -->
   <script src="https://kit.fontawesome.com/ec96da95d9.js" crossorigin="anonymous"></script>
+
+  <!-- CDN to access the code highlighting feature of highlightjs with atom one dark theme -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css" integrity="sha512-Jk4AqjWsdSzSWCSuQTfYRIF84Rq/eV0G2+tu07byYwHcbTGfdmLrHjUSwvzp5HvbiqK4ibmNwdcG49Y5RGYPTg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      
 
@@ -24,8 +29,9 @@
 
     </nav>
   </header>
-  <div class="container">
+  <div class="page-container">
 
+    <!-- NAV BAR ON THE LEFT SIDE -->
     <nav class="nav-list">
       <span class="close"><i class="fas fa-times fa-2x"></i></span>
       <h3 class="main-link">Getting Started</h3>
@@ -52,7 +58,11 @@
       </ul>
 
     </nav>
+
+    <!-- MAIN SECTION WHERE THE DOUCUMENTATION AND THE COMPONENTS GOES -->
     <main class="main-section">
+
+      <!-- DOCUMENTATION AND USAGE -->
       <h2 id="documentation" class="each-section">Documentation</h2>
       <h3>How to use?</h3>
       <p class="section-text">Before adding any components head over to your <strong>HTML</strong> page and add this
@@ -87,32 +97,46 @@
           </code>
         </pre>
       </section>
+
+      <!-- COMPONENTS -->
       <h2 id="components" class="each-section">Components</h2>
+
+      <!-- ALERT COMPONENT -->
       <h3 id="alert">Alert</h3>
       <p class="section-text">This component is used to inform the user about any form of alerts which are distinguished
         by th e class name
         for each context such as primary, success, error and warning. To use these alerts, use the contextual classes
         (e.g., <code>.alert-success</code>).</p>
+
+        <!-- PRIMARY ALERT -->
       <div class="alert alert-primary">
         <p class="alert-message">This is a primary alert. You get a close icon as well</p><img
           src="../styles/components/alert/close.svg" alt="close-icon" class="alert-close">
       </div>
       <br>
+
+      <!-- SUCCESS ALERT -->
       <div class="alert alert-success">
         <p class="alert-message">This is a success alert. You get a close icon as well</p><img
           src="../styles/components/alert/close.svg" alt="close-icon" class="alert-close">
       </div>
       <br>
+
+      <!-- DANGER ALERT -->
       <div class="alert alert-danger">
         <p class="alert-message">This is a danger alert. You get a close icon as well</p><img
           src="../styles/components/alert/close.svg" alt="close-icon" class="alert-close">
       </div>
       <br>
+
+      <!-- WARNING ALERT -->
       <div class="alert alert-warning">
         <p class="alert-message">This is a warning alert. You get a close icon as well</p><img
           src="../styles/components/alert/close.svg" alt="close-icon" class="alert-close">
       </div>
       <br>
+
+      <!-- SIMPLE ALERT -->
       <div class="alert alert-simple">
         <p class="alert-message">This is a simple alert. You get a close icon as well</p><img
           src="../styles/components/alert/close.svg" alt="close-icon" class="alert-close">
@@ -120,6 +144,7 @@
 
       <br>
      
+      <!-- CODE SNIPPETS TO ADD RESPECTIVE ALERTS IN A PROJECT -->
       <section class="code-container">
         <pre class="pre-code">
           <code class="language-html">
@@ -150,8 +175,48 @@
           </code>
         </pre>
       </section>
+
+      <!-- AVATAR COMPONENT -->
       <h3 id="avatar">Avatar</h3>
-      <p>This style is used to set your avatar in different sizes with or without badges on them.</p>
+      <p>This style is used to set your avatar in different sizes.</p>
+      <div class="avatar-container">
+        <img src="../styles/components/avatar/avatar-img.jpg" alt="avatar-image" class="avatar avatar-sm">
+        <img src="../styles/components/avatar/avatar-2.jpg" alt="avatar-image" class="avatar avatar-sm">
+        <img src="../styles/components/avatar/avatar-3.jpg" alt="avatar-image" class="avatar avatar-sm">
+        <img src="../styles/components/avatar/avatar-4.jpg" alt="avatar-image" class="avatar avatar-sm">
+      </div>
+      <h4>Same sized Avatars</h4>
+      <hr>
+      <section class="code-container">
+        <pre class="pre-code">
+          <code class="language-html">
+  &lt;img src="..." alt="avatar-image" class="avatar avatar-sm">
+          </code>
+        </pre>
+      </section>
+      <p>You can add this type of Avatar to your project by copying above code and specifying the source for the image of Avatar</p>
+      <div class="avatar-container">
+        <img src="../styles/components/avatar/avatar-img.jpg" alt="avatar-image" class="avatar avatar-sm">
+        <img src="../styles/components/avatar/avatar-img.jpg" alt="avatar-image" class="avatar avatar-lg">
+        <img src="../styles/components/avatar/avatar-img.jpg" alt="avatar-image" class="avatar avatar-xl">
+        <img src="../styles/components/avatar/avatar-img.jpg" alt="avatar-image" class="avatar avatar-2xl">
+        <img src="../styles/components/avatar/avatar-img.jpg" alt="avatar-image" class="avatar avatar-3xl">
+      </div>
+      <h4>Different sized Avatars</h4>
+      <hr>
+      <section class="code-container">
+        <pre class="pre-code">
+          <code class="language-html">
+            &lt;img src="...." alt="avatar-image" class="avatar avatar-sm">
+            &lt;img src="...." alt="avatar-image" class="avatar avatar-lg">
+            &lt;img src="...." alt="avatar-image" class="avatar avatar-xl">
+            &lt;img src="...." alt="avatar-image" class="avatar avatar-2xl">
+            &lt;img src="...." alt="avatar-image" class="avatar avatar-3xl">
+          </code>
+        </pre>
+      </section>
+      <p>To add one of the sized avatars into your project, you can add the path of desired picture in <code>src</code> mention the size class inside the <code>img</code> (e.g., <code>avatar-sm</code> for small avatar, <code>avatar-lg</code> for large avatars)</p>
+     
       <h3 id="badge">Badge</h3>
       <p>Putting badges on icons, buttons and texts is much easier with a couple of classes.</p>
       <h3 id="button">Buttons</h3>

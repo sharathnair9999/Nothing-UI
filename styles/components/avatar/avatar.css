@@ -1,0 +1,49 @@
+@import url('../..//utilities.css');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root{
+
+}
+
+/* common styling for an avatar */
+
+.avatar-container{
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  width : 100%;
+}
+
+.avatar{
+  border-radius: 50%;
+ margin: 1rem;
+  cursor : pointer;
+}
+
+.avatar-sm{
+  height: 3rem;
+  width: 3rem;
+}
+.avatar-lg{
+  height: 5rem;
+  width: 5rem;
+}
+.avatar-xl{
+  height: 7rem;
+  width: 7rem;
+}
+.avatar-2xl{
+  height: 9rem;
+  width: 9rem;
+}
+
+.avatar-3xl{
+  height: 11rem;
+  width: 11rem;
+}
+
+/* common styling for an avatar */
+
+/* new aa */
