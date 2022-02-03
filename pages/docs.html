@@ -49,7 +49,7 @@
         <li><a class="nav-links " href="#image">Image</a></li>
         <li><a class="nav-links " href="#input">Input</a></li>
       </ul>
-      <ul class="my-1 flex-and-center gap-2">
+      <ul class="mt-1 flex-and-center gap-2">
         <li>
           <a href="https://github.com/sharathnair9999/component-library-neog" target="_blank"><i
               class=" fab fa-github fa-2x"></i></a>
@@ -87,9 +87,11 @@
           </code>
         </pre>
       </section>
-      
-      <p class="section-text">To use icons in the project, you can go over to kit generation site of <a href="https://fontawesome.com/start" target="_blank">Font Awesome</a> to generate your own icons kit for free and link the CDN code to the <code>head</code> of your HTML. Just like below..</p>
-      
+
+      <p class="section-text">To use icons in the project, you can go over to kit generation site of <a
+          href="https://fontawesome.com/start" target="_blank">Font Awesome</a> to generate your own icons kit for free
+        and link the CDN code to the <code>head</code> of your HTML. Just like below..</p>
+
       <section class="code-container">
         <pre class="pre-code">
           <code class="language-html">
@@ -97,7 +99,7 @@
           </code>
         </pre>
       </section>
-      
+
       <p class="section-text">
         NothingUI also enables you to import the styles for components just like the below example. All components can
         be imported similarly by changing the name of the component in the link
@@ -122,34 +124,39 @@
 
       <!-- PRIMARY ALERT -->
       <div class="alert alert-primary">
-        <p class="alert-message">This is a primary alert. You get a close icon as well</p><i class="far fa-times-circle alert-close fa-lg"></i>
+        <p class="alert-message">This is a primary alert. You get a close icon as well</p><i
+          class="far fa-times-circle alert-close fa-lg"></i>
       </div>
-      <br>
+      <hr class="main-section-hr">
 
       <!-- SUCCESS ALERT -->
       <div class="alert alert-success">
-        <p class="alert-message">This is a success alert. You get a close icon as well</p><i class="far fa-times-circle alert-close fa-lg"></i>
+        <p class="alert-message">This is a success alert. You get a close icon as well</p><i
+          class="far fa-times-circle alert-close fa-lg"></i>
       </div>
-      <br>
+      <hr class="main-section-hr">
 
       <!-- DANGER ALERT -->
       <div class="alert alert-danger">
-        <p class="alert-message">This is a danger alert. You get a close icon as well</p><i class="far fa-times-circle alert-close fa-lg"></i>
+        <p class="alert-message">This is a danger alert. You get a close icon as well</p><i
+          class="far fa-times-circle alert-close fa-lg"></i>
       </div>
-      <br>
+      <hr class="main-section-hr">
 
       <!-- WARNING ALERT -->
       <div class="alert alert-warning">
-        <p class="alert-message">This is a warning alert. You get a close icon as well</p><i class="far fa-times-circle alert-close fa-lg"></i>
+        <p class="alert-message">This is a warning alert. You get a close icon as well</p><i
+          class="far fa-times-circle alert-close fa-lg"></i>
       </div>
-      <br>
+      <hr class="main-section-hr">
 
       <!-- SIMPLE ALERT -->
       <div class="alert alert-simple">
-        <p class="alert-message">This is a simple alert. You get a close icon as well</p><i class="far fa-times-circle alert-close fa-lg"></i>
+        <p class="alert-message">This is a simple alert. You get a close icon as well</p><i
+          class="far fa-times-circle alert-close fa-lg"></i>
       </div>
 
-      <br>
+      <hr class="main-section-hr">
 
       <!-- CODE SNIPPETS TO ADD RESPECTIVE ALERTS IN A PROJECT -->
       <section class="code-container">
@@ -184,7 +191,7 @@
       </section>
 
       <!-- AVATAR COMPONENT -->
-      <h3 id="avatar">Avatar</h3>
+      <h3 id="avatar" class="each-section">Avatar</h3>
 
       <!-- SAME SIZED AVATARS -->
       <p>This style is used to set your avatar in different sizes.</p>
@@ -205,6 +212,7 @@
       </section>
       <p>You can add this type of Avatar to your project by copying above code and specifying the source for the image
         of Avatar</p>
+        <hr class="main-section-hr">
       <div class="avatar-container">
         <img src="../styles/components/avatar/avatar-2.jpg" alt="avatar-image" class="avatar avatar-sm">
         <img src="../styles/components/avatar/avatar-2.jpg" alt="avatar-image" class="avatar avatar-lg">
@@ -230,10 +238,9 @@
 
       <p>To add one of the sized avatars into your project, you can mention the size class inside the <code>img</code>
         (e.g., <code>avatar-sm</code> for small avatar, <code>avatar-lg</code> for large avatars)</p>
+        <hr class="main-section-hr">
 
-
-        <!-- BADGES -->
-
+      <!-- BADGES -->
       <h3 id="badge">Badge</h3>
       <p>Putting badges on icons, avatars, buttons and texts is much easier with a couple of classes.</p>
 
@@ -247,11 +254,10 @@
             class="avatar avatar-sm "><span class="badge dnd-badge"></span></div>
         <div class="badge-container mx-1"><img src="../styles/components/avatar/avatar-2.jpg" alt="avatar-image"
             class="avatar avatar-sm "><span class="badge offline-badge"></span></div>
-          </div>
-        <br>
-        <h4>Badge on Avatar</h4>
-        <section class="code-container">
-          <pre class="pre-code">
+      </div>
+      <h4>Badge on Avatar</h4>
+      <section class="code-container">
+        <pre class="pre-code">
             <code class="language-html">
 &lt;div class="badge-container mx-1">
   &lt;img src="...." alt="avatar-image" class="avatar avatar-sm ">
@@ -271,49 +277,183 @@
 &lt;/div>
             </code>
           </pre>
-        </section>
-        <p>You can use badges on avatar according to the status you want to set on it. For example if you want active badge add <code>active-badge</code> into the <code>span</code> tag.</p>
-        <!-- BADGE ON ICONS -->
-        <div class="badges-container">
-          <div class="badge-container mx-1">
-            <i class="fas fa-home fa-2x"></i><span class=" icon-badge red-badge flex-and-center">99+</span>
-          </div>
-          <div class="badge-container mx-1">
-            <i class="fas fa-user-tie fa-2x"></i><span class=" icon-badge blue-badge flex-and-center">5</span>
-          </div>
-          <div class="badge-container mx-1">
-            <i class="fas fa-bell fa-2x"></i><span class=" icon-badge green-badge flex-and-center">10</span>
-          </div>
-          <div class="badge-container mx-1">
-            <i class="fas fa-envelope fa-2x"></i><span class=" icon-badge yellow-badge flex-and-center">3</span>
-          </div>
+      </section>
+      <p>You can use badges on avatar according to the status you want to set on it. For example if you want active
+        badge add <code>active-badge</code> into the <code>span</code> tag.</p>
+        <hr class="main-section-hr">
+      <!-- BADGE ON ICONS -->
+      <div class="badges-container">
+        <div class="badge-container mx-1">
+          <i class="fas fa-home fa-2x"></i><span class=" icon-badge red-badge flex-and-center">99+</span>
         </div>
-        <br>
-        <h4>Badge on Icons</h4>
-        <section class="code-container">
-          <pre class="pre-code">
-            <code class="language-html">
-&lt;div class="badge-container mx-1">
-  &lt;i class="fas fa-home fa-2x">&lt;/i>&lt;span class=" icon-badge red-badge flex-and-center">99+&lt;/span>
-&lt;/div>
-&lt;div class="badge-container mx-1">
-  &lt;i class="fas fa-user-tie fa-2x">&lt;/i>&lt;span class=" icon-badge blue-badge flex-and-center">5&lt;/span>
-&lt;/div>
-&lt;div class="badge-container mx-1">
-  &lt;i class="fas fa-bell fa-2x">&lt;/i>&lt;span class=" icon-badge green-badge flex-and-center">10&lt;/span>
-&lt;/div>
-&lt;div class="badge-container mx-1">
-  &lt;i class="fas fa-envelope fa-2x">&lt;/i>&lt;span class=" icon-badge yellow-badge flex-and-center">3&lt;/span>
-&lt;/div>
-            </code>
-          </pre>
-        </section>
-
-        <p class="section-text">You can use badges on icons as shown above. All you need to do is select an icon from <a href="https://fontawesome.com/" target="_blank">Font Awesome</a> and replace in the given code snippet after generating your kit as guided in the <a href="#documentation">documentation</a> and choose colors among the given color class selectors.</p>
+        <div class="badge-container mx-1">
+          <i class="fas fa-user-tie fa-2x"></i><span class=" icon-badge blue-badge flex-and-center">5</span>
+        </div>
+        <div class="badge-container mx-1">
+          <i class="fas fa-bell fa-2x"></i><span class=" icon-badge green-badge flex-and-center">10</span>
+        </div>
+        <div class="badge-container mx-1">
+          <i class="fas fa-envelope fa-2x"></i><span class=" icon-badge yellow-badge flex-and-center">3</span>
+        </div>
+      </div>
+      <h4>Badge on Icons</h4>
+      <section class="code-container">
+        <pre class="pre-code">
+          <code class="language-html">
+            &lt;div class="badge-container mx-1">
+            &lt;i class="fas fa-home fa-2x">&lt;/i>&lt;span class=" icon-badge red-badge flex-and-center">99+&lt;/span>
+            &lt;/div>
+            &lt;div class="badge-container mx-1">
+            &lt;i class="fas fa-user-tie fa-2x">&lt;/i>&lt;span class=" icon-badge blue-badge flex-and-center">5&lt;/span>
+            &lt;/div>
+            &lt;div class="badge-container mx-1">
+            &lt;i class="fas fa-bell fa-2x">&lt;/i>&lt;span class=" icon-badge green-badge flex-and-center">10&lt;/span>
+            &lt;/div>
+            &lt;div class="badge-container mx-1">
+            &lt;i class="fas fa-envelope fa-2x">&lt;/i>&lt;span class=" icon-badge yellow-badge flex-and-center">3&lt;/span>
+            &lt;/div>
+          </code>
+        </pre>
+      </section>
+      
+      <p class="section-text">You can use badges on icons as shown above. All you need to do is select an icon from <a
+        href="https://fontawesome.com/" target="_blank">Font Awesome</a> and replace in the given code snippet after
+        generating your kit as guided in the <a href="#documentation">documentation</a> and choose colors among the
+        given color class selectors.</p>
+        <hr class="main-section-hr">
         
 
       <h3 id="button">Buttons</h3>
-      <p>Different primary and secondary buttons just a class name away.</p>
+      <p>Different buttons and links, solid and outlined, just a class name away.</p>
+      <div class="button-container">
+        <button class="btn btn-primary">Button</button>
+        <button class="btn btn-success">Button</button>
+        <button class="btn btn-warning">Button</button>
+        <button class="btn btn-danger">Button</button>
+        <button class="btn btn-light">Button</button>
+        <button class="btn btn-dark">Button</button>
+      </div>
+      <h4>Primary Buttons</h4>
+      <section class="code-container">
+        <pre class="pre-code">
+          <code class="language-html">
+&lt;button class="btn btn-primary">Button&lt;/button>
+&lt;button class="btn btn-success">Button&lt;/button>
+&lt;button class="btn btn-warning">Button&lt;/button>
+&lt;button class="btn btn-danger">Button&lt;/button>
+&lt;button class="btn btn-light">Button&lt;/button>
+&lt;button class="btn btn-dark">Button&lt;/button>
+          </code>
+        </pre>
+      </section>
+      <hr class="main-section-hr">
+      <div class="button-container">
+        <button class="btn btn-outline-primary">Button</button>
+        <button class="btn btn-outline-success">Button</button>
+        <button class="btn btn-outline-warning">Button</button>
+        <button class="btn btn-outline-danger">Button</button>
+        <button class="btn btn-outline-light">Button</button>
+        <button class="btn btn-outline-dark">Button</button>
+      </div>
+      <h4>Outlined Buttons</h4>
+      <section class="code-container">
+        <pre class="pre-code">
+          <code class="language-html">
+  &lt;button class="btn btn-outline-primary">Button&lt;/button>
+  &lt;button class="btn btn-outline-success">Button&lt;/button>
+  &lt;button class="btn btn-outline-warning">Button&lt;/button>
+  &lt;button class="btn btn-outline-danger">Button&lt;/button>
+  &lt;button class="btn btn-outline-light">Button&lt;/button>
+  &lt;button class="btn btn-outline-dark">Button&lt;/button>
+          </code>
+        </pre>
+      </section>
+      <hr class="main-section-hr">
+      <div class="button-container">
+        <button class="btn" disabled>Button</button>
+      </div>
+      <h4>Disabled Buttons</h4>
+      <section class="code-container">
+        <pre class="pre-code">
+          <code class="language-html">
+  &lt;button class="btn btn-primary" disabled>Button&lt;/button>
+          </code>
+        </pre>
+      </section>
+      <hr class="main-section-hr">
+      <div class="button-container">
+        <a href="#" class="link link-primary">Link</a>
+        <a href="#" class="link link-secondary">Link</a>
+      </div>
+      <h4>Link</h4>
+      <section class="code-container">
+        <pre class="pre-code">
+          <code class="language-html">
+  &lt;a href="#" class="link link-primary">Link&lt;/button>
+  &lt;a href="#" class="link link-primary">Link&lt;/button>
+          </code>
+        </pre>
+      </section>
+      <hr class="main-section-hr">
+      <div class="button-container">
+        <button class="btn btn-primary rounded-sm">Button</button>
+        <button class="btn btn-primary rounded-lg">Button</button>
+        <button class="btn btn-primary rounded-xl">Button</button>
+        <button class="btn btn-primary rounded-2xl">Button</button>
+      </div>
+      <h4>Rounded Buttons</h4>
+      <section class="code-container">
+        <pre class="pre-code">
+          <code class="language-html">
+&lt;button class="btn btn-primary rounded-sm">Button&lt;/button>
+&lt;button class="btn btn-primary rounded-lg">Button&lt;/button>
+&lt;button class="btn btn-primary rounded-xl">Button&lt;/button>
+&lt;button class="btn btn-primary rounded-2xl">Button&lt;/button>
+          </code>
+        </pre>
+      </section>
+      <hr class="main-section-hr">
+      <div class="button-container">
+        <a href="#"> 
+         <button class="btn floating-btn">
+            <i class="fas fa-arrow-up fa-2x float-icon"></i></button>
+        </a>
+      </div>
+      <h4>Floating Button</h4>
+      <section class="code-container">
+        <pre class="pre-code">
+          <code class="language-html">
+&lt;a href="#"> 
+  &lt;button class="btn floating-btn">
+      &lt;i class="fas fa-arrow-up fa-2x float-icon">&lt;/i>&lt;/button>
+  &lt;/a>
+          </code>
+        </pre>
+      </section>
+      <hr class="main-section-hr">
+      <div class="button-container">
+         <button class="btn icon-primary-btn">
+            <i class="fas fa-bell"></i><span>Button</span>
+          </button>
+         <button class="btn icon-danger-btn">
+            <i class="fas fa-exclamation-circle"></i><span>Button</span>
+          </button>
+      </div>
+      <h4>Button with Icons</h4>
+      <section class="code-container">
+        <pre class="pre-code">
+          <code class="language-html">
+&lt;button class="btn icon-primary-btn">
+  &lt;i class="fas fa-bell">&lt;/i>&lt;span>Button&lt;/span>
+&lt;/button>
+&lt;button class="btn icon-danger-btn">
+  &lt;i class="fas fa-exclamation-circle">&lt;/i>&lt;span>Button&lt;/span>
+&lt;/button>
+          </code>
+        </pre>
+      </section>
+      <hr class="main-section-hr">
+
       <h3 id="snackbar">Snackbar</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quae qui corporis nam error! Ullam, optio
         ipsam sit totam magnam, nisi cumque molestias eos quasi possimus ducimus sed natus quo!</p>

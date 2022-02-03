@@ -71,33 +71,36 @@ header{
   padding-top: 2rem;
 }
 
-.link{
-  padding: 0.8rem 1.5rem;
-  margin: 0 1rem;
-}
 
-.link-primary{
+.hero-link-primary{
   background-color: var(--bg-primary);
   color: var(--bg-secondary);
   border: 1px solid var(--bg-primary);
+  padding: 0.8rem 1.5rem;
+  margin: 0 1rem;
+  transition: all 0.3s;
 }
 
 
-.link-secondary{
+.hero-link-secondary{
   background-color: var(--bg-secondary);
   color: var(--bg-primary);
   border: 1px solid var(--bg-primary);
+  padding: 0.8rem 1.5rem;
+  margin: 0 1rem;
+  transition: all 0.3s;
 }
 
-.link-primary:hover{
-  filter: brightness(95%);
-}
-.link-secondary:hover{
+.hero-link-primary:hover,.hero-link-secondary:hover{
   filter: brightness(95%);
 }
 
 footer{
   display: none;
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
 }
 
 
