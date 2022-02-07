@@ -1,0 +1,34 @@
+@import url('../..//utilities.css');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.img-container{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  margin: 1rem 0rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.responsive-img{
+  width: 100%;
+  height: auto;
+  margin: 0.5rem;
+}
+
+.rounded-img-sm{
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+.rounded-img-lg{
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+}
+.rounded-img-2x{
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+}
