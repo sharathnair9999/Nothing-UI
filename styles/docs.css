@@ -142,8 +142,10 @@ main .section-text{
 }
 
 
-.code-container{
+.code-container code{
   max-width: 80vw;
+  max-height: 300px;
+  overflow-y: scroll;
 }
 
 .section-text a:hover{
