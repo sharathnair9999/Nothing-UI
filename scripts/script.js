@@ -27,6 +27,6 @@ navLinks.forEach((navLink) =>
     console.log(e.target);
     let activeLink = document.querySelector(".nav-link-active");
     activeLink && activeLink.classList.remove("nav-link-active");
-    e.target.classList.add("nav-link-active");
+    navLink.classList.add("nav-link-active");
   })
 );

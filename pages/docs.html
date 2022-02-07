@@ -40,14 +40,14 @@
       <li><a class="nav-links" href="#documentation">Documentation</a></li>
       <h3 class="main-link">Components</h3>
       <ul>
-        <li><a class="nav-links " href="#alert">Alert</a></li>
+        <li><a class="nav-links" href="#alert">Alert</a></li>
         <li><a class="nav-links" href="#avatar">Avatar</a></li>
-        <li><a class="nav-links " href="#badge">Badge</a></li>
-        <li><a class="nav-links " href="#button">Button</a></li>
-        <li><a class="nav-links " href="#snackbar">Snackbar</a></li>
-        <li><a class="nav-links " href="#card">Card</a></li>
-        <li><a class="nav-links " href="#image">Image</a></li>
-        <li><a class="nav-links " href="#input">Input</a></li>
+        <li><a class="nav-links" href="#badge">Badge</a></li>
+        <li><a class="nav-links" href="#button">Button</a></li>
+        <li><a class="nav-links" href="#snackbar">Snackbar</a></li>
+        <li><a class="nav-links" href="#card">Card</a></li>
+        <li><a class="nav-links" href="#image">Image</a></li>
+        <li><a class="nav-links" href="#input">Input</a></li>
       </ul>
       <ul class="mt-1 flex-and-center gap-2">
         <li>
@@ -458,9 +458,266 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quae qui corporis nam error! Ullam, optio
         ipsam sit totam magnam, nisi cumque molestias eos quasi possimus ducimus sed natus quo!</p>
       <h3 id="card">Card</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nostrum laboriosam ab fuga maxime quos
-        enim quo nemo facere aperiam totam, laborum voluptate architecto perspiciatis temporibus nobis pariatur nisi
-        illo!</p>
+      <div class="cards-container">
+        <div class="vertical-card-with-badge">
+          <div class="image-container">
+            <img src="../styles/components/card/ps5.jpg" alt="ps5" class="card-image" >
+            <div class="btn-section">
+              <span class="flag">Only 2 left!</span>
+              <div class="corner-btns">
+                <button  class="btn flex-and-center"><i class="fas fa-heart save"></i></button>
+                <button  class="btn flex-and-center"><i class="fas fa-share send"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="text-section">
+            <h4>PlayStation 5 - DVD + Online</h4>
+            <small>Sony Pvt. Ltd.</small>
+          </div>
+          <div class="rating-section">
+            <i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i><i class="fas fa-star"></i>
+          </div>
+          <div class="rate-section">
+            <span class="curr-price">₹ 39,999.00</span>
+            <span class="mrp-price">₹ 59,999.00</span>
+            <span class="percent-off">(33% off)</span>
+          </div>
+          <div class="card-action-btns">
+            <button class="action-btn primary">Buy now</button>
+            <button  class="action-btn secondary">Add to Cart</button>
+          </div>
+        </div>
+
+      </div>
+      <h4>Vertical Card With Image and Badge</h4>
+
+      <div class="code-container">
+        <pre class="pre-code">
+          <code class="language-html">
+            &lt;div class="vertical-card">
+              &lt;div class="image-container">
+                &lt;img src="../styles/components/card/ps5.jpg" alt="ps5" class="card-image" >
+                &lt;div class="btn-section">
+                  &lt;span class="flag">Only 2 left!&lt;/span>
+                  &lt;div class="corner-btns">
+                    &lt;button  class="btn flex-and-center">&lt;i class="fas fa-heart save">&lt;/i>&lt;/button>
+                    &lt;button  class="btn flex-and-center">&lt;i class="fas fa-share send">&lt;/i>&lt;/button>
+                  &lt;/div>
+                &lt;/div>
+              &lt;/div>
+              &lt;div class="text-section">
+                &lt;h4>PlayStation 5 - DVD + Online&lt;/h4>
+                &lt;small>Sony Pvt. Ltd.&lt;/small>
+              &lt;/div>
+              &lt;div class="rating-section">
+                &lt;i class="fas fa-star checked">&lt;/i>&lt;i class="fas fa-star checked">&lt;/i>&lt;i class="fas fa-star checked">&lt;/i>
+                &lt;i class="fas fa-star checked">&lt;/i>&lt;i class="fas fa-star">&lt;/i>
+              &lt;/div>
+              &lt;div class="rate-section">
+                &lt;span class="curr-price">₹ 39,999.00&lt;/span>
+                &lt;span class="mrp-price">₹ 59,999.00&lt;/span>
+                &lt;span class="percent-off">(33% off)&lt;/span>
+              &lt;/div>
+              &lt;div class="card-action-btns">
+                &lt;button class="action-btn primary">Buy now&lt;/button>
+                &lt;button  class="action-btn secondary">Add to Cart&lt;/button>
+              &lt;/div>
+            &lt;/div>
+          </code>
+        </pre>
+      </div>
+      <hr class="main-section-hr">
+
+    <div class="cards-container">
+      <div class="vertical-card">
+        <div class="image-container">
+          <img src="../styles/components/card/ps5.jpg" alt="ps5" class="card-image">
+          <div class="corner-btns">
+            <button  class="btn flex-and-center"><i class="fas fa-heart save"></i></button>
+            <button  class="btn flex-and-center"><i class="fas fa-share send"></i></button>
+          </div>
+        </div>
+        <div class="text-section">
+          <h4>PlayStation 5 - DVD + Online</h4>
+          <small>Sony Pvt. Ltd.</small>
+        </div>
+        <div class="rating-section">
+          <i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i><i class="fas fa-star"></i>
+        </div>
+        <div class="rate-section">
+          <span class="curr-price">₹ 39,999.00</span>
+          <span class="mrp-price">₹ 59,999.00</span>
+          <span class="percent-off">(33% off)</span>
+        </div>
+        <div class="card-action-btns">
+          <button class="action-btn primary">Buy now</button>
+          <button  class="action-btn secondary">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <h4>Vertical Card without Badge</h4>
+    <div class="code-container">
+      <pre class="pre-code">
+        <code class="language-html">
+          &lt;div class="vertical-card">
+            &lt;div class="image-container">
+              &lt;img src="../styles/components/card/ps5.jpg" alt="ps5" class="card-image">
+              &lt;div class="corner-btns">
+                &lt;button  class="btn flex-and-center">&lt;i class="fas fa-heart save">&lt;/i>&lt;/button>
+                &lt;button  class="btn flex-and-center">&lt;i class="fas fa-share send">&lt;/i>&lt;/button>
+              &lt;/div>
+            &lt;/div>
+            &lt;div class="text-section">
+              &lt;h4>PlayStation 5 - DVD + Online&lt;/h4>
+              &lt;small>Sony Pvt. Ltd.&lt;/small>
+            &lt;/div>
+            &lt;div class="rating-section">
+              &lt;i class="fas fa-star checked">&lt;/i>&lt;i class="fas fa-star checked">&lt;/i>&lt;i class="fas fa-star checked">&lt;/i>
+              &lt;i class="fas fa-star checked">&lt;/i>&lt;i class="fas fa-star">&lt;/i>
+            &lt;/div>
+            &lt;div class="rate-section">
+              &lt;span class="curr-price">₹ 39,999.00&lt;/span>
+              &lt;span class="mrp-price">₹ 59,999.00&lt;/span>
+              &lt;span class="percent-off">(33% off)&lt;/span>
+            &lt;/div>
+            &lt;div class="card-action-btns">
+              &lt;button class="action-btn primary">Buy now&lt;/button>
+              &lt;button  class="action-btn secondary">Add to Cart&lt;/button>
+            &lt;/div>
+          &lt;/div>
+        </code>
+      </pre>
+    </div>
+
+    <hr class="main-section-hr">
+
+    <div class="cards-container">
+      <div class="vertical-card-text-overlay flex">
+        <div class="image-container">
+          <img src="../styles/components/card/ps5.jpg" alt="ps5" class="card-image">
+          <div class="corner-btns">
+            <button  class="btn flex-and-center"><i class="fas fa-heart save"></i></button>
+            <button  class="btn flex-and-center"><i class="fas fa-share send"></i></button>
+          </div>
+        </div>
+        <div class="text-section">
+          <h4>PlayStation 5 - DVD + Online</h4>
+          <small>Sony Pvt. Ltd.</small>
+        </div>
+        <div class="rating-section">
+          <i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i><i class="fas fa-star"></i>
+        </div>
+        <div class="rate-section">
+          <span class="curr-price">₹ 39,999.00</span>
+          <span class="mrp-price">₹ 59,999.00</span>
+          <span class="percent-off">(33% off)</span>
+        </div>
+        <div class="card-action-btns">
+          <button class="action-btn primary">Buy now</button>
+          <button  class="action-btn secondary">Add to Cart</button>
+        </div>
+        <div class="text-overlay-section flex-and-center"><span class="text">Sold Out!</span></div>
+      </div>
+    </div>
+    <h4>Card with Text Overlay</h4>
+    <div class="code-container">
+      <pre class="pre-code">
+        <code class="language-html">
+          &lt;div class="vertical-card-text-overlay flex">
+            &lt;div class="image-container">
+              &lt;img src="../styles/components/card/ps5.jpg" alt="ps5" class="card-image">
+              &lt;div class="corner-btns">
+                &lt;button  class="btn flex-and-center">&lt;i class="fas fa-heart save">&lt;/i>&lt;/button>
+                &lt;button  class="btn flex-and-center">&lt;i class="fas fa-share send">&lt;/i>&lt;/button>
+              &lt;/div>
+            &lt;/div>
+            &lt;div class="text-section">
+              &lt;h4>PlayStation 5 - DVD + Online&lt;/h4>
+              &lt;small>Sony Pvt. Ltd.&lt;/small>
+            &lt;/div>
+            &lt;div class="rating-section">
+              &lt;i class="fas fa-star checked">&lt;/i>&lt;i class="fas fa-star checked">&lt;/i>&lt;i class="fas fa-star checked">&lt;/i>
+              &lt;i class="fas fa-star checked">&lt;/i>&lt;i class="fas fa-star">&lt;/i>
+            &lt;/div>
+            &lt;div class="rate-section">
+              &lt;span class="curr-price">₹ 39,999.00&lt;/span>
+              &lt;span class="mrp-price">₹ 59,999.00&lt;/span>
+              &lt;span class="percent-off">(33% off)&lt;/span>
+            &lt;/div>
+            &lt;div class="card-action-btns">
+              &lt;button class="action-btn primary">Buy now&lt;/button>
+              &lt;button  class="action-btn secondary">Add to Cart&lt;/button>
+            &lt;/div>
+            &lt;div class="text-overlay-section flex-and-center">&lt;span class="text">Sold Out!&lt;/span>&lt;/div>
+          &lt;/div>
+        </code>
+      </pre>
+    </div>
+
+    <hr class="main-section-hr">
+    <div class="cards-container">
+      <div class="horizontal-card">
+        <div class="card-body flex">
+          <img src="../styles/components/card/ps5.jpg" alt="ps5" class="horizontal-img">
+          <div class="card-texts">
+              <div class="text-section">
+                <h4>PlayStation 5 - DVD + Online</h4>
+                <small>Sony Pvt. Ltd.</small>
+            </div>
+            <div class="rating-section">
+              <i class="fas fa-star checked"></i><i class="fas fa-star checked"></i><i class="fas fa-star checked"></i>
+              <i class="fas fa-star checked"></i><i class="fas fa-star"></i>
+            </div>
+            <div class="rate-section">
+              <span class="curr-price">₹ 39,999.00</span>
+              <span class="mrp-price">₹ 59,999.00</span>
+              <span class="percent-off">(33% off)</span>
+            </div>
+          </div>
+        </div>
+          <div class="card-action-btns flex">
+            <button class="action-btn primary">Buy now</button>
+            <button  class="action-btn secondary">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <h4>Horizontal Card with Image</h4>
+   
+    <div class="code-container">
+      <pre class="pre-code">
+        <code class="language-html">
+         &lt;div class="horizontal-card">
+         &lt;div class="card-body flex">
+           &lt;img src="../styles/components/card/ps5.jpg" alt="ps5" class="horizontal-img">
+           &lt;div class="card-texts">
+               &lt;div class="text-section">
+                 &lt;h4>PlayStation 5 - DVD + Online&lt;/h4>
+                 &lt;small>Sony Pvt. Ltd.&lt;/small>
+             &lt;/div>
+             &lt;div class="rating-section">
+               &lt;i class="fas fa-star checked">&lt;/i>&lt;i class="fas fa-star checked">&lt;/i>&lt;i class="fas fa-star checked">&lt;/i>
+               &lt;i class="fas fa-star checked">&lt;/i>&lt;i class="fas fa-star">&lt;/i>
+             &lt;/div>
+             &lt;div class="rate-section">
+               &lt;span class="curr-price">₹ 39,999.00&lt;/span>
+               &lt;span class="mrp-price">₹ 59,999.00&lt;/span>
+               &lt;span class="percent-off">(33% off)&lt;/span>
+             &lt;/div>
+           &lt;/div>
+         &lt;/div>
+           &lt;div class="card-action-btns flex">
+             &lt;button class="action-btn primary">Buy now&lt;/button>
+             &lt;button  class="action-btn secondary">Add to Cart&lt;/button>
+         &lt;/div>
+       &lt;/div>
+        </code>
+      </pre>
+    </div>
+    <hr class="main-section-hr">
+
       <h3 id="image">Image</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam eveniet vero facere? In voluptates fuga,
         asperiores nobis necessitatibus excepturi quaerat eum expedita nisi accusantium, repudiandae labore omnis velit
