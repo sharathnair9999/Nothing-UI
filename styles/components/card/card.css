@@ -285,3 +285,29 @@ background-color: white;
   gap: 0.3rem;
   align-items: flex-start;
 }
+
+.text-only-card{
+  max-width: 25rem;
+  display:flex;
+justify-content:center;
+align-items:flex-start;
+position:relative;
+gap: 1rem;
+border:0.5px solid #cbd5e1;
+border-radius: 0.4rem;
+box-shadow: 0px 1px 1px 1px rgba(167,167,167);
+background-color: white;
+padding: 0.5rem;
+}
+
+.text-only-card .card-action-btns{
+  flex-direction: row;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.text-only-card img{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
