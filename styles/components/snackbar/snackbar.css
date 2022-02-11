@@ -28,7 +28,7 @@
   bottom: 1rem;
   max-width: 30rem;
   height: 4rem;
-  padding: 2px 4px;
+  padding: 0.1rem 0.3rem;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -48,7 +48,7 @@
   bottom: 1rem;
   left: 0rem;
   margin: auto 1rem;
-  justify-content: s;
+  justify-content: start;
   align-items: center;
   background-color: var(--snackbar-bg);
   font-weight: 400;
@@ -61,7 +61,7 @@
   position: fixed;
   bottom: 1rem;
   max-width: 25rem;
-  padding: 2px 4px;
+  padding: 0.1rem 0.3rem;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -88,8 +88,8 @@
 .baseline span,
 .leading span,
 .stacked p {
-  margin: 10px;
-  font-size: 12px;
+  margin: 10px 10px;
+  font-size: 0.8rem;
 }
 
 .baseline button,
@@ -101,7 +101,7 @@
   font-size: 1rem;
   cursor: pointer;
   padding: 8px 12px;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .baseline button:hover,
@@ -113,7 +113,7 @@
 .baseline .close-icon,
 .leading .close-icon,
 .stacked .close-icon {
-  padding: 4px;
+  padding: 5px;
 }
 .baseline .close-icon:hover,
 .leading .close-icon:hover,
