@@ -48,6 +48,7 @@
         <li><a class="nav-links" href="#card">Card</a></li>
         <li><a class="nav-links" href="#image">Image</a></li>
         <li><a class="nav-links" href="#input">Input</a></li>
+        <li><a class="nav-links" href="#modal">Modal</a></li>
       </ul>
       <ul class="mt-1 flex-and-center gap-2">
         <li>
@@ -455,8 +456,134 @@
       <hr class="main-section-hr">
 
       <h3 id="snackbar">Snackbar</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quae qui corporis nam error! Ullam, optio
-        ipsam sit totam magnam, nisi cumque molestias eos quasi possimus ducimus sed natus quo!</p>
+      <div class="snackbar-btn-section">
+        <button class="btn btn-primary baseline-snackbar">Baseline</button>
+        <button class="btn btn-primary leading-snackbar">Leading</button>
+        <button class="btn btn-primary stacked-snackbar">Stacked</button>
+      </div>
+      <br>
+      <div class="window-for-baseline hide">
+        <div class="baseline">
+          <span>Can't send photo. Retry in 5 seconds.</span>
+          <div class="snackbar-btns">
+          <button>RETRY</button>
+          <i class="fas fa-times close-icon"></i>
+          </div>
+        </div>
+      </div>
+      <div class="window-for-leading hide">
+        <div class="leading">
+          <span>Can't send photo. Retry in 5 seconds.</span>
+          <div class="snackbar-btns">
+          <button>RETRY</button>
+          <i class="fas fa-times close-icon"></i>
+  
+          </div>
+        </div>
+      </div>
+      <div class="window-for-stacked hide">
+        <div class="stacked">
+          <p>
+            This item already has the label "travel". You can add a new label.
+          </p>
+          <div class="stacked-icons">
+            <button>RETRY</button>
+            <i class="fas fa-times close-icon"></i>
+          </div>
+        </div>
+      </div>
+      <h4>Add this to your HTML</h4>
+      <div class="code-container">
+        <pre class="pre-code">
+          <code class="language-html">
+            &lt;div class="snackbar-btn-section">
+              &lt;button class="btn btn-primary baseline-snackbar">Baseline&lt;/button>
+              &lt;button class="btn btn-primary leading-snackbar">Leading&lt;/button>
+              &lt;button class="btn btn-primary stacked-snackbar">Stacked&lt;/button>
+            &lt;/div>
+            &lt;div class="window-for-baseline hide">
+              &lt;div class="baseline">
+                &lt;span>Can't send photo. Retry in 5 seconds.&lt;/span>
+                &lt;div class="snackbar-btns">
+                &lt;button>RETRY&lt;/button>
+                &lt;i class="fas fa-times close-icon">&lt;/i>
+                &lt;/div>
+              &lt;/div>
+            &lt;/div>
+            &lt;div class="window-for-leading hide">
+              &lt;div class="leading">
+                &lt;span>Can't send photo. Retry in 5 seconds.&lt;/span>
+                &lt;div class="snackbar-btns">
+                &lt;button>RETRY&lt;/button>
+                &lt;i class="fas fa-times close-icon">&lt;/i>
+        
+                &lt;/div>
+              &lt;/div>
+            &lt;/div>
+            &lt;div class="window-for-stacked hide">
+              &lt;div class="stacked">
+                &lt;p>
+                  This item already has the label "travel". You can add a new label.
+                &lt;/p>
+                &lt;div class="stacked-icons">
+                  &lt;button>RETRY&lt;/button>
+                  &lt;i class="fas fa-times close-icon">&lt;/i>
+                &lt;/div>
+              &lt;/div>
+            &lt;/div>
+          </code>
+        </pre>
+      </div>
+      <br>
+      <h4>Add this to your Script portion</h4>
+      <div class="code-container">
+        <pre class="pre-code">
+          <code class="language-js">
+ 
+    const baselineOpen = document.querySelector(".baseline-snackbar");
+    const leadingOpen = document.querySelector(".leading-snackbar");
+    const stackedOpen = document.querySelector(".stacked-snackbar");
+    const baselineBar = document.querySelector(".window-for-baseline");
+    const leadingBar = document.querySelector(".window-for-leading");
+    const stackedBar = document.querySelector(".window-for-stacked");
+    const baselineClose = document.querySelector(
+      ".window-for-baseline .close-icon"
+    );
+    const leadingClose = document.querySelector(".window-for-leading .close-icon");
+    const stackedClose = document.querySelector(".window-for-stacked .close-icon");
+
+    baselineOpen.addEventListener("click", () => {
+      baselineBar.classList.contains("window-for-baseline")
+        ? baselineBar.classList.toggle("hide")
+        : baselineBar.classList.toggle("window-for-baseline");
+    });
+
+    baselineClose.addEventListener("click", () => {
+      baselineBar.classList.toggle("hide");
+    });
+
+    leadingOpen.addEventListener("click", () => {
+      leadingBar.classList.contains("window-for-leading")
+        ? leadingBar.classList.toggle("hide")
+        : leadingBar.classList.toggle("window-for-leading");
+    });
+
+    leadingClose.addEventListener("click", () => {
+      leadingBar.classList.toggle("hide");
+    });
+    stackedOpen.addEventListener("click", () => {
+      stackedBar.classList.contains("window-for-stacked")
+        ? stackedBar.classList.toggle("hide")
+        : stackedBar.classList.toggle("window-for-stacked");
+    });
+
+    stackedClose.addEventListener("click", () => {
+      stackedBar.classList.toggle("hide");
+    });
+
+          </code>
+        </pre>
+      </div>
       <h3 id="card">Card</h3>
       <div class="cards-container">
         <div class="vertical-card-with-badge">
@@ -901,8 +1028,8 @@
         </pre>
       </div>
 
-
-     
+      <h3 id="modal">Modal</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt non necessitatibus iusto doloremque voluptatem omnis odio? Exercitationem, omnis laboriosam quos eaque commodi necessitatibus fuga quas facere tenetur placeat rem eligendi!</p>
 
     </main>
 
@@ -913,5 +1040,6 @@
   </script>
 </body>
 <script src="../scripts/script.js"></script>
+<script src="../styles/components/snackbar/snackbar.js"></script>
 
 </html>

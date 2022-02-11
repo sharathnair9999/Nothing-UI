@@ -1,0 +1,123 @@
+@import url("../../utilities.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --box-shadow-color: rgb(167, 167, 167);
+  --snackbar-bg: #1e293b;
+  --white: white;
+  --snackbar-btn-color: rgb(165, 10, 226);
+  --button-hover: #121822;
+  --close-hover: #272626;
+}
+
+.window-for-baseline,
+.window-for-leading,
+.window-for-stacked {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hide {
+  display: none;
+  transition: display 0.3s ease-in;
+}
+
+.baseline {
+  position: fixed;
+  bottom: 1rem;
+  max-width: 30rem;
+  height: 4rem;
+  padding: 2px 4px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 2px 3px var(--box-shadow-color);
+  background-color: var(--snackbar-bg);
+  color: var(--white);
+  margin: 0rem 2rem;
+  z-index: 1;
+}
+
+.leading {
+  position: fixed;
+  display: flex;
+  height: 4rem;
+  max-width: 30rem;
+  bottom: 1rem;
+  left: 0rem;
+  margin: auto 1rem;
+  justify-content: s;
+  align-items: center;
+  background-color: var(--snackbar-bg);
+  font-weight: 400;
+  color: var(--white);
+  border-radius: 5px;
+  box-shadow: 0 2px 3px var(--box-shadow-color);
+  z-index: 1;
+}
+.stacked {
+  position: fixed;
+  bottom: 1rem;
+  max-width: 25rem;
+  padding: 2px 4px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 2px 3px var(--box-shadow-color);
+  background-color: var(--snackbar-bg);
+  color: var(--white);
+}
+
+.stacked-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto;
+}
+
+.snackbar-btns {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto;
+}
+
+.baseline span,
+.leading span,
+.stacked p {
+  margin: 10px;
+  font-size: 12px;
+}
+
+.baseline button,
+.leading button,
+.stacked button {
+  color: var(--snackbar-btn-color);
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.baseline button:hover,
+.leading button:hover,
+.stacked button:hover {
+  background-color: var(--button-hover);
+}
+
+.baseline .close-icon,
+.leading .close-icon,
+.stacked .close-icon {
+  padding: 4px;
+}
+.baseline .close-icon:hover,
+.leading .close-icon:hover,
+.stacked .close-icon:hover {
+  filter: brightness(95%);
+  background-color: var(--close-hover);
+}

@@ -24,7 +24,6 @@ hamburger.addEventListener("click", () => {
 
 navLinks.forEach((navLink) =>
   navLink.addEventListener("click", (e) => {
-    console.log(e.target);
     let activeLink = document.querySelector(".nav-link-active");
     activeLink && activeLink.classList.remove("nav-link-active");
     navLink.classList.add("nav-link-active");
