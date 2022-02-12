@@ -98,6 +98,10 @@
   align-items: center;
 }
 
+.flex-col{
+  flex-direction: column;
+}
+
 .gap-1 {
   gap: 1rem;
 }
