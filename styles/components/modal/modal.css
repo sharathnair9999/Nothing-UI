@@ -1,3 +1,92 @@
-@import url('../..//utilities.css');
+@import url("../..//utilities.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+:root {
+  --black: #000;
+  --white: white;
+  --modal-bg: rgba(0, 0, 0, 0.8);
+  --box-shadow-color: rgba(92, 92, 92, 0.8);
+}
+
+.modal-container {
+  gap: 1rem;
+}
+
+.dialog-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: var(--modal-bg);
+  animation: fadeIn 0.3s;
+}
+
+.dialog-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0rem 2rem;
+  padding: 10px;
+  background-color: var(--white);
+  border-radius: 10px;
+  width: 25rem;
+  height: 15rem;
+  box-shadow: 1px 4px 4px 2px var(--box-shadow-color);
+}
+.scrollable-modal hr {
+  border-bottom: var(--black);
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.scrollable-modal {
+  height: 22rem;
+}
+
+.scrollable-modal section {
+  width: 100%;
+}
+
+.dialog-box .list {
+  height: 10rem;
+  overflow-y: scroll;
+}
+
+.list .list-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px 12px;
+}
+.list-item input {
+  margin-right: 1rem;
+}
+
+.dialog-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-left: auto;
+  padding-bottom: 10px;
+  gap: 10px;
+}
+
+.hide-dialog {
+  display: none;
+}
+
+.dialog-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
