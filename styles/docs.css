@@ -69,7 +69,9 @@ header .hamburger {
   .close{
     display: block;
     margin-right: auto;
-    padding: 2.5rem 0rem 0rem 1.5rem;
+    position: fixed;
+    top: 1.5rem;
+    left: 2rem;
 
   }
   .main-logo {
@@ -91,8 +93,18 @@ header .hamburger {
     flex-direction: column;
   }
 
+  .nav-section{
+    position: relative;
+    top: 5rem;
+  }
+
   .nav-open {
     transform: translateX(0);
+  }
+
+  .footer-elements{
+    position: fixed;
+    left: 30%;
   }
 }
 
