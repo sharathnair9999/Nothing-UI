@@ -240,7 +240,16 @@ padding: 0.3rem;
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: rgba(167,167,167);
+  background-color: rgba(240, 240, 240, 0.493);
+  opacity: 0;
+  transition: .5s ease;
+  /* transform: translate(-50%, -50%); */
+}
+
+.vertical-card-text-overlay:hover .text-overlay-section{
+  opacity: 1;
+}
+.vertical-card-text-overlay:hover .card-body{
   opacity: 0.5;
 }
 
