@@ -2,6 +2,10 @@
   margin: 0 auto;
 }
 
+.my-auto{
+  margin: auto 0;
+}
+
 .mx-1 {
   margin: 0 1rem;
 }
