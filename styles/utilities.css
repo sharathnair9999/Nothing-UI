@@ -1,3 +1,11 @@
+.p-1{
+  padding : 1rem;
+}
+
+.m-1{
+  margin: 1rem;
+}
+
 .mx-auto {
   margin: 0 auto;
 }
