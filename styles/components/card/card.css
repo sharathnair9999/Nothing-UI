@@ -208,12 +208,45 @@ padding: 0.3rem;
     width: 15rem;
   }
 
+
+  .horizontal-card{
+    max-width: 20rem;
+    max-height: 15rem;
+  }
+
+  .card-texts{
+    font-size: 0.8rem;
+  }
+
+  .horizontal-card.cart-card {
+    max-height: 14rem;
+  }
+
+  .cart-card .horizontal-img{
+    max-height: 11rem;
+  }
+
+  .horizontal-card.cart-card .qty-btn{
+   width: 1rem;
+   height: 1rem;
+   font-size: 0.8rem;
+  }
+
   .rate-section{
     font-size: 0.7rem;
   }
 
   .card-action-btns .action-btn{
     font-size: 0.9rem;
+    padding: 6px 8px;
+  }
+  .qty-section{
+    font-size: 0.8rem;
+    margin: 0;
+  }
+
+  .rating-section i{
+    font-size: 10px;
   }
 }
 
@@ -265,7 +298,7 @@ padding: 0.3rem;
 /* Horizontal Card */
 
 .horizontal-card{
-  max-width: 25rem;
+  max-width: 30rem;
   display:flex;
 justify-content:center;
 align-items:flex-start;
@@ -281,6 +314,7 @@ background-color: white;
   max-height: 10rem;
   object-fit: cover;
   max-width: 10rem;
+  border-top-left-radius: 8px;
 }
 
 .horizontal-card .card-action-btns{
@@ -295,6 +329,41 @@ background-color: white;
   justify-content: center;
   gap: 4px;
   align-items: flex-start;
+}
+
+.horizontal-card .qty-btn{
+  background-color: var(--all-white);
+  border-radius: 50%;
+  padding: 0.3rem;
+  margin: 0.3rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  border: 1px solid var(--dark-700);
+  font-size: 1rem;
+}
+
+.horizontal-card .qty-input{
+  width: 3rem;
+  height: 1.5rem;
+  border-radius: 4px;
+}
+
+.qty-section{
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 0.3rem;
+}
+
+.qty-btn-section{
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cart-card .horizontal-img{
+  max-height: 12rem;
+  max-width: auto;
+  object-fit: cover;
+  border-top-left-radius: 8px;
 }
 
 .text-only-card{
