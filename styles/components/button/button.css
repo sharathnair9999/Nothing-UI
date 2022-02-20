@@ -144,7 +144,7 @@
 }
 
 .btn-outline-light:hover{
-  background-color: var(--dark-300);
+  background-color: var(--light-300);
   color: var(--dark-700);
 }
 .btn-outline-dark{
