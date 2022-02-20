@@ -1,19 +1,6 @@
 @import url('../..//utilities.css');
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-:root{
-  --input-border: #94a3b8;
-  --success-200: #bbf7d0;
-  --success-600: #16a34a;
-  --success-700: #15803d;
-  --warning-200: #fef08a;
-  --warning-600: #ca8a04;
-  --warning-700: #a16207;
-  --danger-200: #fecaca;
-  --danger-600: #dc2626;
-  --danger-700: #b91c1c;
-  --primary-500: #22d3ee;
-}
+
 
 .inputs-container{
   width: 100%;
@@ -26,7 +13,7 @@
   width: 100%;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  border: 1px solid var(--input-border);
+  border: 1px solid var(--light-400);
   border-radius: 0.5rem;
   outline: none;
 }
@@ -70,7 +57,7 @@
 }
 
 .form-controls{
-  border: 1px solid rgb(146, 144, 144);
+  border: 1px solid var(--box-shadow-color);
   border-radius: 0.3rem;
   width:100%;
   padding: 1rem;

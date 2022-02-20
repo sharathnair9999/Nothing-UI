@@ -1,9 +1,5 @@
 @import url("../..//utilities.css");
 
-:root{
-  --white-200: #e2e8f0;
-}
-
 .item{
   border-radius: 1rem;
   background-color: var(--white-200);

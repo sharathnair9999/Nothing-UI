@@ -1,24 +1,5 @@
 @import url('../..//utilities.css');
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-:root{
-  --primary-600 : #0284c7;
-  --primary-900 : #0c4a6e;
-  --primary-200 : #bae6fd;
-  --danger-200 : #fecaca;
-  --danger-600 : #dc2626;
-  --danger-900: #7f1d1d;
-  --success-200 : #bbf7d0;
-  --success-600 : #16a34a;
-  --success-900: #14532d;
-  --warning-200 : #fef08a;
-  --warning-600 : #ca8a04;
-  --warning-900: #713f12;
-  --simple-200 : #a5f3fc;
-  --simple-600 : #0891b2;
-  --simple-900: #164e63;
-
-}
 
 /* Common styling for alert */
 .alert{
@@ -112,7 +93,7 @@
 /* simple alert styles */
 
 .alert-simple{
-  border :1px solid var(--simple-600);
+  border :1px solid var(--primary-600);
   color: var(--simple-900);
   background-color: var(--simple-200);
 }

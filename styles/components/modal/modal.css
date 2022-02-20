@@ -1,12 +1,6 @@
 @import url("../..//utilities.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-:root {
-  --black: #000;
-  --white: white;
-  --modal-bg: rgba(0, 0, 0, 0.8);
-  --box-shadow-color: rgba(92, 92, 92, 0.8);
-}
 
 .modal-container {
   gap: 1rem;
@@ -34,7 +28,7 @@
   text-align: center;
   margin: 0rem 2rem;
   padding: 10px;
-  background-color: var(--white);
+  background-color: var(--all-white);
   border-radius: 10px;
   width: 25rem;
   height: 15rem;

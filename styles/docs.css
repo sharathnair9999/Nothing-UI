@@ -12,7 +12,7 @@
 
 /* side nav bar on desktop */
 .nav-list {
-  width: 22vw;
+  width: 20vw;
   background-color: white;
   box-shadow: 2px 1px 2px 1px var(--box-shadow-color);
   transform: translateX(0%);
@@ -86,15 +86,9 @@ header .hamburger {
     transform: translateX(-100%);
     transition: transform 300ms;
     overflow-y: auto;
-    padding-left: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
   }
 
   .nav-section{
-    position: relative;
     top: 5rem;
   }
 
@@ -104,7 +98,6 @@ header .hamburger {
 
   .footer-elements{
     position: fixed;
-    left: 30%;
   }
 }
 
@@ -126,7 +119,7 @@ header .hamburger {
 
 .nav-link-active{
   background-color: var(--bg-primary);
-  color: var(--bg-secondary);
+  color: var(--light-50);
 }
 
 .active-section {
@@ -147,10 +140,6 @@ main h3{
   width: 100%;
   padding: 1rem 0;
   font-size: 1.5rem;
-}
-
-main .section-text{
-  margin: 1rem 0;
 }
 
 
