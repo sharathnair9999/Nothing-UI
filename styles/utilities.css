@@ -177,6 +177,24 @@
   justify-content: flex-start;
 }
 
+.justify-space-btw{
+  justify-content: space-between;
+}
+
+.justify-around{
+  justify-content: space-around;
+}
+
+.wrap{
+  flex-wrap: wrap;
+}
+
+.wrap-reverse{
+  flex-wrap: wrap-reverse;
+}
+
+
+
 .justify-center{
   justify-content: center;
 }
@@ -213,6 +231,10 @@
   right: 0;
 }
 
+.gap-sm{
+  gap: 0.5rem;
+}
+
 .gap-1 {
   gap: 1rem;
 }
@@ -244,9 +266,7 @@ button:hover, .link:hover{
 
 code{
   font-size: 1rem;
-  background-color: #e2e8f0;
   border-radius: 2px;
-  /* padding: 2px; */
 }
 
 @keyframes fadeIn {

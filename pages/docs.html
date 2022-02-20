@@ -333,7 +333,7 @@
 
       <h3 id="button">Buttons</h3>
       <p>Different buttons and links, solid and outlined, just a class name away.</p>
-      <div class="button-container">
+      <div class=" flex-and-center my-1 gap-1 flex-and-center wrap gap-1 my-1">
         <button class="btn btn-primary">Button</button>
         <button class="btn btn-success">Button</button>
         <button class="btn btn-warning">Button</button>
@@ -355,7 +355,7 @@
         </pre>
       </section>
       <hr class="main-section-hr">
-      <div class="button-container">
+      <div class=" flex-and-center my-1 gap-1">
         <button class="btn btn-outline-primary">Button</button>
         <button class="btn btn-outline-success">Button</button>
         <button class="btn btn-outline-warning">Button</button>
@@ -377,7 +377,7 @@
         </pre>
       </section>
       <hr class="main-section-hr">
-      <div class="button-container">
+      <div class=" flex-and-center my-1 gap-1">
         <button class="btn" disabled>Button</button>
       </div>
       <h4>Disabled Buttons</h4>
@@ -389,7 +389,7 @@
         </pre>
       </section>
       <hr class="main-section-hr">
-      <div class="button-container">
+      <div class=" flex-and-center my-1 gap-1">
         <a href="#" class="link link-primary">Link</a>
         <a href="#" class="link link-secondary">Link</a>
       </div>
@@ -403,7 +403,7 @@
         </pre>
       </section>
       <hr class="main-section-hr">
-      <div class="button-container">
+      <div class=" flex-and-center my-1 gap-1">
         <button class="btn btn-primary rounded-sm">Button</button>
         <button class="btn btn-primary rounded-lg">Button</button>
         <button class="btn btn-primary rounded-xl">Button</button>
@@ -421,9 +421,9 @@
         </pre>
       </section>
       <hr class="main-section-hr">
-      <div class="button-container">
+      <div class=" flex-and-center my-1 gap-1">
         <a href="#">
-          <button class="btn floating-btn">
+          <button class="btn floating-btn flex-and-center m-1 p-1">
             <i class="fas fa-arrow-up fa-2x float-icon"></i></button>
         </a>
       </div>
@@ -439,8 +439,8 @@
         </pre>
       </section>
       <hr class="main-section-hr">
-      <div class="button-container">
-        <button class="btn icon-primary-btn">
+      <div class=" flex-and-center my-1 gap-1">
+        <button class="btn icon-primary-btn flex-and-center gap-sm">
           <i class="fas fa-bell"></i><span>Button</span>
         </button>
         <button class="btn icon-danger-btn">
@@ -816,8 +816,8 @@
             </div>
           </div>
           <div class="card-action-btns flex">
-            <button class="action-btn primary">Buy now</button>
-            <button class="action-btn secondary">Add to Cart</button>
+            <button class="action-btn btn-primary">Buy now</button>
+            <button class="action-btn btn-secondary">Add to Cart</button>
           </div>
         </div>
          <div class="horizontal-card cart-card">
@@ -843,7 +843,7 @@
                <div class="flex qty-btn-section">
 
                  <button class="qty-btn flex-and-center">-</button>
-                 <input type="number" class="qty-input flex-and-center " name="qty" id="qty">
+                 <input type="number" min="0" class="qty-input flex-and-center" name="qty" id="qty">
                  <button class="qty-btn flex-and-center ">+</button>
                </div>
               </div>
@@ -910,7 +910,7 @@
              &lt;div class="flex qty-btn-section">
 
                &lt;button class="qty-btn flex-and-center">-&lt;/button>
-               &lt;input type="number" class="qty-input flex-and-center " name="qty" id="qty">
+               &lt;input type="number" min="0" class="qty-input flex-and-center " name="qty" id="qty">
                &lt;button class="qty-btn flex-and-center ">+&lt;/button>
              &lt;/div>
             &lt;/div>
