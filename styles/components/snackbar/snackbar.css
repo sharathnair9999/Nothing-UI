@@ -1,14 +1,4 @@
 @import url("../../utilities.css");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
-:root {
-  --box-shadow-color: rgb(167, 167, 167);
-  --snackbar-bg: #1e293b;
-  --white: white;
-  --snackbar-btn-color: rgb(165, 10, 226);
-  --button-hover: #121822;
-  --close-hover: #272626;
-}
 
 .window-for-baseline,
 .window-for-leading,
@@ -35,9 +25,9 @@
   justify-content: space-around;
   box-shadow: 0 2px 3px var(--box-shadow-color);
   background-color: var(--snackbar-bg);
-  color: var(--white);
+  color: var(--all-white);
   margin: 0rem 2rem;
-  z-index: 1;
+  z-index: 10;
 }
 
 .leading {
@@ -52,10 +42,10 @@
   align-items: center;
   background-color: var(--snackbar-bg);
   font-weight: 400;
-  color: var(--white);
+  color: var(--all-white);
   border-radius: 5px;
   box-shadow: 0 2px 3px var(--box-shadow-color);
-  z-index: 1;
+  z-index: 10;
 }
 .stacked {
   position: fixed;
@@ -68,7 +58,8 @@
   flex-direction: column;
   box-shadow: 0 2px 3px var(--box-shadow-color);
   background-color: var(--snackbar-bg);
-  color: var(--white);
+  color: var(--all-white);
+  z-index: 10;
 }
 
 .stacked-icons {
@@ -95,7 +86,7 @@
 .baseline button,
 .leading button,
 .stacked button {
-  color: var(--snackbar-btn-color);
+  color: var(--purple-300);
   background-color: transparent;
   border: none;
   font-size: 1rem;

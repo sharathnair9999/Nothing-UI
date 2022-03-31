@@ -10,7 +10,7 @@
   padding: 0;
 }
 body {
-  background: var(--entire-bg);
+  background: var(--white-200);
 }
 a {
   color: inherit;
