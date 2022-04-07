@@ -2,6 +2,15 @@
 
 /*----------------------------------------- vertical card with badge------------------------------------------ */
 
+.cards-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+}
+
 .vertical-card-with-badge,
 .vertical-card,
 .vertical-card-text-overlay {
@@ -10,7 +19,7 @@
   align-items: flex-start;
   max-width: 18rem;
   flex-direction: column;
-  border: 0.5px solid var(--dark-300);
+  border: 0.5px solid var(--light-300);
   border-radius: 0.4rem;
   box-shadow: 0px 1px 1px 1px var(--box-shadow-color);
   background-color: var(--all-white);
@@ -50,7 +59,7 @@
 
 .flag {
   position: relative;
-  background-color: var(--dark-300);
+  background-color: var(--light-300);
   display: flex;
   color: var(--danger-300);
   font-weight: bold;
@@ -270,7 +279,7 @@
   align-items: flex-start;
   position: relative;
   flex-direction: column;
-  border: 0.5px solid var(--dark-300);
+  border: 0.5px solid var(--light-300);
   border-radius: 8px;
   box-shadow: 0px 1px 1px 1px var(--box-shadow-color);
   background-color: var(--all-white);
@@ -339,7 +348,7 @@
   align-items: flex-start;
   position: relative;
   gap: 1rem;
-  border: 0.5px solid var(--dark-300);
+  border: 0.5px solid var(--light-300);
   border-radius: 8px;
   box-shadow: 0px 1px 1px 1px var(--box-shadow-color);
   background-color: var(--all-white);
