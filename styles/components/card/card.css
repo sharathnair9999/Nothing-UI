@@ -8,6 +8,7 @@
   align-items: center;
   gap: 1rem;
   margin: 1rem 0;
+  flex-wrap: wrap;
 }
 
 .vertical-card-with-badge,
