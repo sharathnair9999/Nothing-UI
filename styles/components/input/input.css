@@ -1,4 +1,4 @@
-@import url('../..//utilities.css');
+@import url('../../utilities.css');
 
 
 
@@ -13,14 +13,9 @@
   width: 100%;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  border: 1px solid var(--light-400);
+  border: none;
   border-radius: 0.5rem;
   outline: none;
-}
-
-.input-box:focus, .success-input:focus, .warning-input:focus, .danger-input:focus{
-  outline: 1px solid var(--primary-500);
-  border: none;
 }
 
 .success-input{

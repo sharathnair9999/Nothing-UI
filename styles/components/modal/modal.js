@@ -1,44 +1,54 @@
-// Simple Modal Open and Close Feature
-
 const openSimpleModalBtn = document.querySelector(
   ".simple-modal-container .open-modal"
 );
-const simpleModal = document.querySelector(".simple-modal-container .dialog-container");
-const closeSimpleModal = document.querySelector(".simple-modal-container .close-modal");
+const openScrollableModalBtn = document.querySelector(
+  ".scrollable-modal-container .open-modal"
+);
+
+const closeSimpleModalBtn = document.querySelectorAll(
+  ".simple-modal-container .close-modal"
+);
+const closeScrollableModalBtn = document.querySelectorAll(
+  ".scrollable-modal-container .close-modal"
+);
+
+const simpleDialogContainer = document.querySelector(
+  ".simple-modal-container .dialog-container"
+);
+const scrollableDialogContainer = document.querySelector(
+  ".scrollable-modal-container .dialog-container"
+);
 
 openSimpleModalBtn.addEventListener("click", () => {
-  simpleModal.classList.contains("hide-dialog")
-    ? simpleModal.classList.remove("hide-dialog")
-    : simpleModal.classList.add("hide-dialog");
-  });
-  
-  closeSimpleModal.addEventListener("click", () => {
+  simpleDialogContainer.classList.add("show-dialog");
+  simpleDialogContainer.classList.remove("hide-dialog");
+});
 
-    simpleModal.classList.contains("dialog-container")
-      ? simpleModal.classList.add("hide-dialog")
-      : simpleModal.classList.remove("hide-dialog");
-  });
+closeSimpleModalBtn.forEach((btn) =>
+  btn.addEventListener("click", () => {
+    simpleDialogContainer.classList.remove("show-dialog");
+    simpleDialogContainer.classList.add("hide-dialog");
+  })
+);
+openScrollableModalBtn.addEventListener("click", () => {
+  scrollableDialogContainer.classList.add("show-dialog");
+  scrollableDialogContainer.classList.remove("hide-dialog");
+});
 
-// Scrollable Model Open and Close Feature
+closeScrollableModalBtn.forEach((btn) =>
+  btn.addEventListener("click", () => {
+    scrollableDialogContainer.classList.remove("show-dialog");
+    scrollableDialogContainer.classList.add("hide-dialog");
+  })
+);
 
-  const openScrollModalBtn = document.querySelector(
-    ".scrollable-modal-container .open-modal"
-  );
-  const scrollableModal = document.querySelector(".scrollable-modal-container .dialog-container");
-  const closeScrollableModal = document.querySelector(".scrollable-modal-container .close-modal");
-  
-  openScrollModalBtn.addEventListener("click", () => {
-    scrollableModal.classList.contains("hide-dialog")
-      ? scrollableModal.classList.remove("hide-dialog")
-      : scrollableModal.classList.add("hide-dialog");
-    });
-    
-    closeScrollableModal.addEventListener("click", () => {
-  
-      scrollableModal.classList.contains("dialog-container")
-        ? scrollableModal.classList.add("hide-dialog")
-        : scrollableModal.classList.remove("hide-dialog");
-    });
-  
-  
-  
+const dialogContainer = document.querySelectorAll(".dialog-container");
+
+dialogContainer.forEach((dialog) =>
+  window.addEventListener("mouseup", (e) => {
+    if (e.target == dialog) {
+      dialog.classList.remove("show-dialog");
+      dialog.classList.add("hide-dialog");
+    }
+  })
+);
