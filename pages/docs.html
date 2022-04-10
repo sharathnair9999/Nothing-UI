@@ -54,6 +54,7 @@
         <li><a class="nav-links" href="#modal">Modal</a></li>
         <li><a class="nav-links" href="#grid">Grid</a></li>
         <li><a class="nav-links" href="#text-utils">Text Utilities</a></li>
+        <li><a class="nav-links" href="#lists">Lists</a></li>
         <ul class="footer-elements mt-1 flex-and-center gap-2">
           <li>
             <a href="https://github.com/sharathnair9999/component-library-neog" target="_blank"><i
@@ -71,7 +72,7 @@
     <main class="main-section">
 
       <!-- DOCUMENTATION AND USAGE -->
-      <h2  id="documentation" class="each-section">Documentation</h2>
+      <h2 id="documentation" class="each-section">Documentation</h2>
       <h3 class="section-header">How to use?</h3>
       <p class="section-text">Before adding any components head over to your <strong>HTML</strong> page and add this
         link inside the head
@@ -364,10 +365,10 @@
       </div>
       <hr class="main-section-hr">
       <div class=" flex-and-center my-1 gap-1">
-        <a href="#">
-          <button class="btn floating-btn flex-and-center m-1 p-1">
-            <i class="fas fa-arrow-up fa-2x float-icon"></i></button>
-        </a>
+
+        <button class="btn floating-btn flex-and-center m-1 p-1">
+          <i class="fas fa-arrow-up fa-2x float-icon"></i></button>
+
       </div>
       <h4>Floating Button</h4>
       <div class="iframe-container">
@@ -993,7 +994,9 @@
       <hr class="main-section-hr">
       <h3 class="section-header" id="text-utils">Text Utilities</h3>
       <p class="font-md-2 my-1 text-underline text-left w-100">Typography (Heading)</p>
-      <p class="font-md-1 text-left w-100">To use this header styles, use the classes  <code>h-1</code> <code>h-2</code> <code>h-3</code> <code>h-4</code> <code>h-5</code> <code>h-6</code> </p>
+      <p class="font-md-1 text-left w-100">To use this header styles, use the classes <code>h-1</code> <code>h-2</code>
+        <code>h-3</code> <code>h-4</code> <code>h-5</code> <code>h-6</code>
+      </p>
       <div class="text-utils-container">
         <h1 class="h-1">Heading - 1</h1>
         <h2 class="h-2">Heading - 2</h2>
@@ -1002,10 +1005,12 @@
         <h5 class="h-5">Heading - 5</h5>
         <h6 class="h-6">Heading - 6</h6>
       </div>
-      
+
       <hr class="main-section-hr">
       <p class="font-md-2 my-1 text-underline text-left w-100">Align Texts</p>
-      <p class="font-md-1 text-left w-100">To use this text aligning styles, use the classes  <code>text-left</code> <code>text-center</code> <code>text-right</code>  </p>
+      <p class="font-md-1 text-left w-100">To use this text aligning styles, use the classes <code>text-left</code>
+        <code>text-center</code> <code>text-right</code>
+      </p>
       <div class="text-align-container my-1 flex flex-col w-100 b-1-gray">
         <p class="text-left">Left Aligned Text</p>
         <p class="text-center">Center Aligned Text</p>
@@ -1013,7 +1018,10 @@
       </div>
       <hr class="main-section-hr">
       <p class="font-md-2 my-1 text-underline text-left w-100">Typography (Texts)</p>
-      <p class="font-md-1 text-left w-100">To use this font sizes, use the classes  <code>font-xsm</code> <code>font-sm-1</code> <code>font-sm-2</code> <code>font-md-1</code> <code>font-md-2</code> <code>font-lg</code> <code>font-xl</code> <code>font-2xl</code> <code>font-3xl</code>  </p>
+      <p class="font-md-1 text-left w-100">To use this font sizes, use the classes <code>font-xsm</code>
+        <code>font-sm-1</code> <code>font-sm-2</code> <code>font-md-1</code> <code>font-md-2</code> <code>font-lg</code>
+        <code>font-xl</code> <code>font-2xl</code> <code>font-3xl</code>
+      </p>
       <div class="text-utils-container my-1 flex flex-col w-100 gap-1 justify-center">
         <p class="font-xsm">Very Small Text</p>
         <p class="font-sm-1">Small Text - 1</p>
@@ -1028,7 +1036,9 @@
 
       <hr class="main-section-hr">
       <p class="font-md-2 my-1 text-underline text-left w-100">Typography (Font Weight)</p>
-      <p class="font-md-1 text-left w-100">To use this font weights, use the classes  <code>font-bold-1</code>  <code>font-bold-4</code> <code>font-bold-5</code> <code>font-bold-6</code> <code>font-bold-7</code></p>
+      <p class="font-md-1 text-left w-100">To use this font weights, use the classes <code>font-bold-1</code>
+        <code>font-bold-4</code> <code>font-bold-5</code> <code>font-bold-6</code> <code>font-bold-7</code>
+      </p>
       <div class="text-utils-container my-1 flex flex-col w-100 gap-1 justify-center">
         <p class="font-lg font-bold-1">Text Bold - 1</p>
         <p class="font-lg font-bold-4">Text Bold - 4</p>
@@ -1037,7 +1047,73 @@
         <p class="font-lg font-bold-7">Text Bold - 7</p>
       </div>
 
-
+      <hr class="main-section-hr">
+      <h3 class="section-header" id="lists">Lists</h3>
+      <p class="font-md-2 my-1 text-underline text-left w-100">Upper - Roman List</p>
+      <p class="font-md-1 text-left w-100">To use this list style, use the class <code>upper-roman-list</code>
+      <ol class="upper-roman-list py-1">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+      </ol>
+      <p class="font-md-2 my-1 text-underline text-left w-100">Lower - Roman List</p>
+      <p class="font-md-1 text-left w-100">To use this list style, use the class <code>lower-roman-list</code>
+      <ol class="lower-roman-list py-1">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+      </ol>
+      <p class="font-md-2 my-1 text-underline text-left w-100">Spaced List</p>
+      <p class="font-md-1 text-left w-100">To use this list style, use the class <code>spaced-list</code>
+      <ul class="spaced-list py-1">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+      </ul>
+      <p class="font-md-2 my-1 text-underline text-left w-100">Stacked Notification List</p>
+      <p class="font-md-1 text-left w-100">To use this list style, use the class <code>stacked-list</code>
+      <ul class="stacked-list py-1">
+        <li>
+          <article class="stacked-list-item">
+            <figure><img class="responsive-img pointer"
+                src="https://res.cloudinary.com/sharath-media-library/image/upload/v1647875427/nothing-store-project/ps5_cgta4o.jpg"
+                alt="ps-5"></figure>
+            <div class="list-text">
+              <p class="font-md-1">Sony PlayStation 5</p>
+              <small class="text-green">Arriving Tomorrow</small>
+            </div>
+            <span class="list-label">New</span>
+          </article>
+        </li>
+        <li>
+          <article class="stacked-list-item">
+            <figure><img class="responsive-img pointer"
+                src="https://res.cloudinary.com/sharath-media-library/image/upload/v1647875427/nothing-store-project/ps5_cgta4o.jpg"
+                alt="ps-5"></figure>
+            <div class="list-text">
+              <p class="font-md-1">Sony PlayStation 5</p>
+              <small class="text-yellow">Expecting Delay</small>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="stacked-list-item">
+            <figure><img class="responsive-img pointer"
+                src="https://res.cloudinary.com/sharath-media-library/image/upload/v1647875427/nothing-store-project/ps5_cgta4o.jpg"
+                alt="ps-5"></figure>
+            <div class="list-text">
+              <p class="font-md-1">Sony PlayStation 5</p>
+              <small class="text-red">Order Cancelled</small>
+            </div>
+          </article>
+        </li>
+      </ul>
+      <div class="iframe-container">
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=14px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522stacked-list%2520py-1%2522%253E%250A%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%253Carticle%2520class%253D%2522stacked-list-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cfigure%253E%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522responsive-img%2520pointer%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522....%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522ps-5%2522%253E%253C%252Ffigure%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522list-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522font-md-1%2522%253ESony%2520PlayStation%25205%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-green%2522%253EArriving%2520Tomorrow%253C%252Fsmall%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522list-label%2522%253ENew%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Farticle%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%253E%2520%253Carticle%2520class%253D%2522stacked-list-item%2522%253E%250A%2520%2520%2520%2520%253Cfigure%253E%253Cimg%250A%2520%2520%2520%2520%2520%2520class%253D%2522responsive-img%2520pointer%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522....%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522ps-5%2522%253E%253C%252Ffigure%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522list-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522font-md-1%2522%253ESony%2520PlayStation%25205%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-yellow%2522%253EExpecting%2520Delay%253C%252Fsmall%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Farticle%253E%253C%252Fli%253E%250A%2520%2520%253Cli%253E%2520%253Carticle%2520class%253D%2522stacked-list-item%2522%253E%250A%2520%2520%2520%2520%253Cfigure%253E%253Cimg%250A%2520%2520%2520%2520%2520%2520class%253D%2522responsive-img%2520pointer%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522....%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522ps-5%2522%253E%253C%252Ffigure%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522list-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522font-md-1%2522%253ESony%2520PlayStation%25205%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Csmall%2520class%253D%2522text-red%2522%253EOrder%2520Cancelled%253C%252Fsmall%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Farticle%253E%250A%2520%253C%252Fli%253E%250A%253C%252Ful%253E"
+          class="iframe" sandbox="allow-scripts allow-same-origin">
+        </iframe>
+      </div>
     </main>
 
   </div>

@@ -30,3 +30,7 @@ navLinks.forEach((navLink) =>
   })
 );
 
+
+const floatingBtn = document.querySelector(".floating-btn");
+
+floatingBtn.addEventListener("click", ()=>window.scrollTo(0,0));

@@ -104,6 +104,12 @@ header .hamburger {
   border-radius: 0.5rem;
   display: inline-block;
 }
+
+.nav-list li{
+
+  list-style: none;
+}
+
 .nav-links:hover {
   background-color: var(--bg-primary-hover);
   color: var(--bg-secondary-hover);
