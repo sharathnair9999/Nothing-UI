@@ -29,3 +29,4 @@ navLinks.forEach((navLink) =>
     navLink.classList.add("nav-link-active");
   })
 );
+
