@@ -120,12 +120,12 @@ header .hamburger {
   transition: background-color 0.3s ease;
 }
 
-main h2 {
+main .each-section {
   text-align: center;
   font-size: 2rem;
 }
 
-main h3 {
+main .section-header {
   margin-bottom: 0.3rem;
   box-shadow: 0 4px 6px -6px var(--box-shadow-color);
   width: 100%;
