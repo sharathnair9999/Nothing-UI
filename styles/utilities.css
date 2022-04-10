@@ -1,6 +1,6 @@
 :root {
   --all-white: #ffffff;
-  --white-100:#f7f7f7;
+  --white-100: #f7f7f7;
   --white-200: #f8f8f8;
   --black: #000;
   --modal-bg: #000000cc;
@@ -23,9 +23,9 @@
   --nav-bar-res: #dfdede;
   --sky-600: #0284c7;
   --sky-400: #0ea5e9;
-  --sky-700:#0369a1;
+  --sky-700: #0369a1;
   --sky-200: #bae6fd;
-  --sky-100:#e0f2fe;
+  --sky-100: #e0f2fe;
   --sky-50: #f0f9ff;
   --light-50: #f8fafc;
   --light-100: #f1f5f9;
@@ -63,21 +63,33 @@
   --snackbar-bg: #1e293b;
   --button-hover: #121822;
   --close-hover: #272626;
-  --blue-badge : #3b82f6;
+  --blue-badge: #3b82f6;
   --offline-badge: #9ca3af;
-  --hr-black : linear-gradient(to right, #00000000, #000000bf, #00000000);  
+  --hr-black: linear-gradient(to right, #00000000, #000000bf, #00000000);
   font-family: "Poppins", sans-serif;
+
+  /* Spacing */
+
+  --sp-2xsm: 2px;
+  --sp-xsm: 4px;
+  --sp-sm: 8px;
+  --sp-md: 12px;
+  --sp-lg: 16px;
+  --sp-xl: 20px;
+  --sp-2xl: 24px;
+  --sp-3xl: 28px;
+  --sp-4xl: 32px;
 }
 
 .w-100 {
   width: 100%;
 }
 
-.w-80{
+.w-80 {
   width: 80%;
 }
 
-.h-100{
+.h-100 {
   height: 100%;
 }
 
@@ -85,11 +97,11 @@
   padding: 0.5rem;
 }
 
-.p-0{
+.p-0 {
   padding: 0;
 }
 
-.m-0{
+.m-0 {
   padding: 0;
 }
 
@@ -204,7 +216,7 @@
 .mb-1 {
   margin-bottom: 1rem;
 }
-.pb-sm{
+.pb-sm {
   padding-bottom: 0.5rem;
 }
 .pb-1 {
@@ -233,7 +245,7 @@
   margin-left: 2rem;
 }
 
-.ml-3{
+.ml-3 {
   margin-left: 3rem;
 }
 .pl-2 {
@@ -282,7 +294,7 @@
   justify-content: space-between;
 }
 
-.justify-evenly{
+.justify-evenly {
   justify-content: space-evenly;
 }
 
@@ -294,7 +306,7 @@
   flex-wrap: wrap;
 }
 
-.no-wrap{
+.no-wrap {
   flex-wrap: nowrap;
 }
 
@@ -306,7 +318,7 @@
   justify-content: center;
 }
 
-.content-center{
+.content-center {
   align-content: center;
 }
 
@@ -365,11 +377,11 @@
   position: absolute;
 }
 
-.b-1-gray{
-  border: 1px solid --;
+.b-1-gray {
+  border: 1px solid var(--light-300);
 }
 
-.border-rounded-sm{
+.border-rounded-sm {
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -392,8 +404,10 @@ button:hover,
 }
 
 code {
-  font-size: 1rem;
+  font-size: 1em;
   border-radius: 2px;
+  background-color: var(--light-100);
+  padding: var(--sp-2xsm) var(--sp-xsm);
 }
 
 @keyframes fadeIn {
@@ -405,48 +419,61 @@ code {
   }
 }
 
-.bold{
+.bold {
   font-weight: bold;
 }
 
-.bolder{
+.bolder {
   font-weight: bolder;
 }
-.x-scroll{
+.x-scroll {
   overflow-x: scroll;
 }
-.x-auto{
+.x-auto {
   overflow-x: auto;
 }
-.y-auto{
+.y-auto {
   overflow-y: auto;
 }
 
-.y-scroll{
+.y-scroll {
   overflow-y: scroll;
 }
 
-.overflow-auto{
+.overflow-auto {
   overflow: auto;
 }
 
-
-.flex-shrink-1{
+.flex-shrink-1 {
   flex-shrink: 1;
 }
 
-.flex-grow-1{
+.flex-grow-1 {
   flex-grow: 1;
 }
 
-.bg-gray-100{
+.bg-gray-100 {
   background-color: rgb(230, 230, 230);
 }
 
-.bg-gray-200{
+.bg-gray-200 {
   background-color: rgb(214, 214, 214);
 }
 
-.bg-gray-300{
-  background-color: rgb(200,200,200);
+.bg-gray-300 {
+  background-color: rgb(200, 200, 200);
 }
+
+.text-white-100{
+  color: var(--white-100);
+}
+
+.text-white-200{
+  color: var(--white-200);
+}
+
+.text-white-300{
+  color: var(--light-100);
+}
+
+

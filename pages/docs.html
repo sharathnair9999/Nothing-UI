@@ -53,6 +53,7 @@
         <li><a class="nav-links" href="#input">Input</a></li>
         <li><a class="nav-links" href="#modal">Modal</a></li>
         <li><a class="nav-links" href="#grid">Grid</a></li>
+        <li><a class="nav-links" href="#text-utils">Text Utilities</a></li>
         <ul class="footer-elements mt-1 flex-and-center gap-2">
           <li>
             <a href="https://github.com/sharathnair9999/component-library-neog" target="_blank"><i
@@ -70,8 +71,8 @@
     <main class="main-section">
 
       <!-- DOCUMENTATION AND USAGE -->
-      <h2 id="documentation" class="each-section">Documentation</h2>
-      <h3>How to use?</h3>
+      <h2  id="documentation" class="each-section">Documentation</h2>
+      <h3 class="section-header">How to use?</h3>
       <p class="section-text">Before adding any components head over to your <strong>HTML</strong> page and add this
         link inside the head
         section that helps import the css for the components that you want to use.</p>
@@ -120,7 +121,7 @@
       <h2 id="components" class="each-section">Components</h2>
 
       <!-- ALERT COMPONENT -->
-      <h3 id="alert">Alert</h3>
+      <h3 class="section-header" id="alert">Alert</h3>
       <p class="section-text">This component is used to inform the user about any form of alerts which are distinguished
         by th e class name
         for each context such as primary, success, error and warning. To use these alerts, use the contextual classes
@@ -171,7 +172,7 @@
       </div>
 
       <!-- AVATAR COMPONENT -->
-      <h3 id="avatar" class="each-section">Avatar</h3>
+      <h3 class="section-header" id="avatar" class="each-section">Avatar</h3>
 
       <!-- SAME SIZED AVATARS -->
       <p>This style is used to set your avatar in different sizes.</p>
@@ -233,7 +234,7 @@
       <hr class="main-section-hr">
 
       <!-- BADGES -->
-      <h3 id="badge">Badge</h3>
+      <h3 class="section-header" id="badge">Badge</h3>
       <p>Putting badges on icons, avatars, buttons and texts is much easier with a couple of classes.</p>
 
       <!-- BADGE ON AVATAR -->
@@ -291,7 +292,7 @@
       <hr class="main-section-hr">
 
 
-      <h3 id="button">Buttons</h3>
+      <h3 class="section-header" id="button">Buttons</h3>
       <p>Different buttons and links, solid and outlined, just a class name away.</p>
       <div class=" flex-and-center my-1 gap-1 wrap">
         <button class="btn btn-primary">Button</button>
@@ -393,7 +394,7 @@
       </div>
       <hr class="main-section-hr">
 
-      <h3 id="snackbar">Snackbar</h3>
+      <h3 class="section-header" id="snackbar">Snackbar</h3>
       <div class="snackbar-btn-section wrap flex-and-center gap-1 ">
         <button class="btn btn-primary baseline-snackbar">Baseline</button>
         <button class="btn btn-primary leading-snackbar">Leading</button>
@@ -445,7 +446,7 @@
           class="iframe" sandbox="allow-scripts allow-same-origin">
         </iframe>
       </div>
-      <h3 id="card">Card</h3>
+      <h3 class="section-header" id="card">Card</h3>
       <div class="cards-container">
         <div class="vertical-card-with-badge">
           <div class="image-container">
@@ -672,7 +673,7 @@
       <hr class="main-section-hr">
 
 
-      <h3 id="image">Image</h3>
+      <h3 class="section-header" id="image">Image</h3>
       <div class="img-container">
 
         <img
@@ -710,7 +711,7 @@
         </iframe>
       </div>
 
-      <h3 id="input">Input</h3>
+      <h3 class="section-header" id="input">Input</h3>
 
       <div class="inputs-container flex">
         <h4>Normal Input</h4>
@@ -780,13 +781,13 @@
 
       <hr class="main-section-hr">
 
-      <h3 id="modal">Modal</h3>
+      <h3 class="section-header" id="modal">Modal</h3>
       <div class="modal-container flex-and-center">
         <div class="simple-modal-container">
 
           <div class="dialog-container hide-dialog">
             <div class="dialog-box">
-              <h3 class="dialog-header">Dialog Header</h3>
+              <h3 class="section-header" class="dialog-header">Dialog Header</h3>
               <hr />
               <p>Here comes the dialog text</p>
               <div class="dialog-buttons">
@@ -843,7 +844,7 @@
           class="iframe" sandbox="allow-scripts allow-same-origin">
         </iframe>
       </div>
-      <h3 id="grid">Grid</h3>
+      <h3 class="section-header" id="grid">Grid</h3>
       <div class="grid-container grid-col-3 grid">
         <div class="item flex flex-col">
           <img
@@ -990,6 +991,53 @@
         </iframe>
       </div>
       <hr class="main-section-hr">
+      <h3 class="section-header" id="text-utils">Text Utilities</h3>
+      <p class="font-md-2 my-1 text-underline text-left w-100">Typography (Heading)</p>
+      <p class="font-md-1 text-left w-100">To use this header styles, use the classes  <code>h-1</code> <code>h-2</code> <code>h-3</code> <code>h-4</code> <code>h-5</code> <code>h-6</code> </p>
+      <div class="text-utils-container">
+        <h1 class="h-1">Heading - 1</h1>
+        <h2 class="h-2">Heading - 2</h2>
+        <h3 class="h-3">Heading - 3</h3>
+        <h4 class="h-4">Heading - 4</h4>
+        <h5 class="h-5">Heading - 5</h5>
+        <h6 class="h-6">Heading - 6</h6>
+      </div>
+      
+      <hr class="main-section-hr">
+      <p class="font-md-2 my-1 text-underline text-left w-100">Align Texts</p>
+      <p class="font-md-1 text-left w-100">To use this text aligning styles, use the classes  <code>text-left</code> <code>text-center</code> <code>text-right</code>  </p>
+      <div class="text-align-container my-1 flex flex-col w-100 b-1-gray">
+        <p class="text-left">Left Aligned Text</p>
+        <p class="text-center">Center Aligned Text</p>
+        <p class="text-right">Right Aligned Text</p>
+      </div>
+      <hr class="main-section-hr">
+      <p class="font-md-2 my-1 text-underline text-left w-100">Typography (Texts)</p>
+      <p class="font-md-1 text-left w-100">To use this font sizes, use the classes  <code>font-xsm</code> <code>font-sm-1</code> <code>font-sm-2</code> <code>font-md-1</code> <code>font-md-2</code> <code>font-lg</code> <code>font-xl</code> <code>font-2xl</code> <code>font-3xl</code>  </p>
+      <div class="text-utils-container my-1 flex flex-col w-100 gap-1 justify-center">
+        <p class="font-xsm">Very Small Text</p>
+        <p class="font-sm-1">Small Text - 1</p>
+        <p class="font-sm-2">Small Text - 2</p>
+        <p class="font-md-1">Medium Text - 1</p>
+        <p class="font-md-2">Medium Text - 2</p>
+        <p class="font-lg">Large Text</p>
+        <p class="font-xl">X-Large Text</p>
+        <p class="font-2xl">2X-Large Text</p>
+        <p class="font-3xl">3X-Large Text</p>
+      </div>
+
+      <hr class="main-section-hr">
+      <p class="font-md-2 my-1 text-underline text-left w-100">Typography (Font Weight)</p>
+      <p class="font-md-1 text-left w-100">To use this font weights, use the classes  <code>font-bold-1</code>  <code>font-bold-4</code> <code>font-bold-5</code> <code>font-bold-6</code> <code>font-bold-7</code></p>
+      <div class="text-utils-container my-1 flex flex-col w-100 gap-1 justify-center">
+        <p class="font-lg font-bold-1">Text Bold - 1</p>
+        <p class="font-lg font-bold-4">Text Bold - 4</p>
+        <p class="font-lg font-bold-5">Text Bold - 5</p>
+        <p class="font-lg font-bold-6">Text Bold - 6</p>
+        <p class="font-lg font-bold-7">Text Bold - 7</p>
+      </div>
+
+
     </main>
 
   </div>
