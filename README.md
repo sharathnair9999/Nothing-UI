@@ -23,6 +23,17 @@ Now that you've made your setup, let's jump into the details of the components.
 
 This library comprises of 10 components, each with different characteristics. 
 
+## Text Utilities
+
+![image](https://user-images.githubusercontent.com/61535475/162794333-50b0c093-49f3-41c5-97a2-edcf244983fb.png)
+
+![image](https://user-images.githubusercontent.com/61535475/162794450-5b92b2f5-373a-4831-9801-26672b6f9625.png)
+
+![image](https://user-images.githubusercontent.com/61535475/162794497-f1be837b-71fc-4b8f-a92e-166234681997.png)
+
+![image](https://user-images.githubusercontent.com/61535475/162794557-098c93df-9a36-43a7-bf0f-e4cf5f11c951.png)
+
+
 ## 1. Alert
 ---
   ![image](https://user-images.githubusercontent.com/61535475/154962610-311daa26-6f8b-4877-8442-3e42942a3c2c.png)
@@ -153,3 +164,28 @@ This library comprises of 10 components, each with different characteristics.
   - Grid with 2 rows
 
      ![image](https://user-images.githubusercontent.com/61535475/154975249-4c942fa4-4820-46df-8f1c-8d2ebfe5aaeb.png)
+     
+---
+
+11. Navigation
+
+    - Simple Desktop Navigation
+    
+    ![image](https://user-images.githubusercontent.com/61535475/162795929-0d2d9f12-14bb-4670-8a7a-baf142f6f4bb.png)
+
+    - Responsive Hamburger Navigation
+      
+      ![image](https://user-images.githubusercontent.com/61535475/162796758-51bda050-3049-4305-8b0c-281f55764cb7.png)
+---
+
+12. Rating 
+   
+    ![image](https://user-images.githubusercontent.com/61535475/162797205-c647d176-c291-4260-9fa6-084ae3807829.png)
+
+---
+
+13. Lists
+
+    ![image](https://user-images.githubusercontent.com/61535475/162797066-3b6ac66c-c413-4e9d-8ad3-bece36eb83c7.png)
+    
+    ![image](https://user-images.githubusercontent.com/61535475/162797127-ec75a300-7921-473f-9be1-be7856baaf09.png)
