@@ -1,0 +1,107 @@
+.simple-navigation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--sp-sm) var(--sp-lg);
+  background-color: var(--light-100);
+  width: 100%;
+}
+
+.simple-navigation .nav-links{
+  padding: 5px 10px;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+
+.responsive-navigation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--sp-sm) var(--sp-lg);
+  height: 4rem;
+  position: relative;
+  width: 100%;
+  background-color:var(--light-300);
+}
+
+.responsive-navigation .spaced-list{
+  gap: 0;
+}
+
+.responsive-navigation .search-nav-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: var(--white-100);
+  max-width: 15rem;
+  width: 100%;
+}
+
+.responsive-navigation .search-nav-container .search-input{
+  padding: 5px 10px;
+  border: none;
+  font-size: var(--sp-lg);
+  outline: none;
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 2rem;
+}
+.responsive-navigation .search-nav-container .search-icon{
+  padding: 5px 20px;
+  border: none;
+  outline: none;
+  height: 100%;
+  background: transparent;
+}
+
+.responsive-nav-hamburger{
+  background: transparent;
+  border: none;
+  padding: 10px;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: var(--white-200);
+}
+
+
+@media screen and (max-width:768px) {
+  .hide{
+    display: none;
+  }
+  
+  .show{
+    display: block;
+  }
+  
+  .responsive-navigation .search-nav-container{
+    max-width: 10rem;
+  }
+
+  .responsive-navigation .search-nav-container .search-input{
+    width: 100%;
+  }
+
+  .responsive-navigation .spaced-list{
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    flex-direction: column;
+    background-color: var(--light-100);
+    border-radius: 5px;
+  }
+
+  .responsive-navigation .spaced-list li,.responsive-navigation .spaced-list li a{
+    width: 100%;
+    text-align: center;
+  }
+
+  .responsive-nav-hamburger{
+    display: block;
+  }
+
+
+
+}
