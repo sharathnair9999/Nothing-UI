@@ -11,4 +11,5 @@
 @import url("./components/text-utils/text-utils.css");
 @import url("./components/Lists/lists.css");
 @import url("./components/Navigation/navigation.css");
+@import url("./components/Rating/rating.css");
 @import url("./utilities.css")
