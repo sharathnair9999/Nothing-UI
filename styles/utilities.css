@@ -128,6 +128,20 @@
   padding: auto 0;
 }
 
+
+.mx-sm{
+  margin: 0 0.5rem;
+}
+.my-sm{
+  margin: 0.5rem 0;
+}
+.px-sm{
+  padding: 0 0.5rem;
+}
+.py-sm{
+padding: 0.5rem 0;
+}
+
 .mx-1 {
   margin: 0 1rem;
 }
