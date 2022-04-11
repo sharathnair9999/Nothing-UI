@@ -95,9 +95,14 @@ footer {
   right: 0;
 }
 
+.icon-container{
+  list-style: none;
+}
+
 @media screen and (max-width: 768px) {
   .icon-container {
     display: none !important;
+
   }
 
   header {
